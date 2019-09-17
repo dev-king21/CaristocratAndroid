@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_bg"
+                app:tabBackground="@drawable/outlet_mall_selector"
+                app:tabIndicatorColor="@color/colorTransparent"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/colorWhite"
+                app:tabTextAppearance="@style/tab_text"
+                app:tabTextColor="@color/colorBlack" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpOutletMall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingEnd="@dimen/dp10"
+                android:paddingStart="@dimen/dp10" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/llSorting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp16"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray" />
+
+            <RadioButton
+                android:id="@+id/rbLatestReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp16"
+                android:layout_marginStart="@dimen/dp16"
+                android:button="@drawable/sort_selector"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/dp16"
+                android:text="@string/latest_reviews" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray" />
+
+            <RadioButton
+                android:id="@+id/rbHighestReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp16"
+                android:layout_marginStart="@dimen/dp16"
+                android:button="@drawable/sort_selector"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/dp16"
+                android:text="@string/highest_reviews" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray" />
+
+            <RadioButton
+                android:id="@+id/rbLowestReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp16"
+                android:layout_marginStart="@dimen/dp16"
+                android:button="@drawable/sort_selector"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/dp16"
+                android:text="@string/lowest_reviews" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray" />
+
+            <RadioButton
+                android:id="@+id/rbNumberReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp16"
+                android:layout_marginStart="@dimen/dp16"
+                android:button="@drawable/sort_selector"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/dp16"
+                android:text="@string/num_reviews" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/llSortingCars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp16"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray" />
+
+            <RadioButton
+                android:id="@+id/rbNewest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp16"
+                android:layout_marginStart="@dimen/dp16"
+                android:button="@drawable/sort_selector"
+                android:checked="true"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/dp16"
+                android:text="@string/newest_to_oldest" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray" />
+
+            <RadioButton
+                android:id="@+id/rbOldest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp16"
+                android:layout_marginStart="@dimen/dp16"
+                android:button="@drawable/sort_selector"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/dp16"
+                android:text="@string/oldest_to_newest" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray" />
+
+            <RadioButton
+                android:id="@+id/rbLowestPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp16"
+                android:layout_marginStart="@dimen/dp16"
+                android:button="@drawable/sort_selector"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/dp16"
+                android:text="@string/price_lowest" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray" />
+
+            <RadioButton
+                android:id="@+id/rbHighestPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp16"
+                android:layout_marginStart="@dimen/dp16"
+                android:button="@drawable/sort_selector"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/dp16"
+                android:text="@string/price_highest" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorLightGray" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</layout>

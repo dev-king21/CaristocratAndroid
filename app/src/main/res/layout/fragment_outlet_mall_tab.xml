@@ -1,0 +1,117 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvOutletMallHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp20"
+            android:paddingTop="@dimen/dp30"
+            android:paddingEnd="@dimen/dp20"
+            android:paddingBottom="@dimen/dp20"
+            android:text="@string/the_best_cars_in_dubai_for_those_who_want_nothing_less"
+            android:textColor="@color/colorBlack" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewOutletMall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="?android:attr/actionBarSize"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingStart="@dimen/dp10"
+                    android:paddingEnd="@dimen/dp10" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <LinearLayout
+                android:id="@+id/noDataLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <include layout="@layout/no_data_layout" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>
+
+
+    <!--
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvOutletMallHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp20"
+                    android:paddingEnd="@dimen/dp20"
+                    android:paddingStart="@dimen/dp20"
+                    android:paddingTop="@dimen/dp30"
+                    android:text="@string/the_best_cars_in_dubai_for_those_who_want_nothing_less"
+                    android:textColor="@color/colorBlack" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.ingic.caristocrat.helpers.ExpandedRecyclerView
+                        android:id="@+id/recyclerViewOutletMall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="?android:attr/actionBarSize"
+                        android:nestedScrollingEnabled="false"
+                        android:paddingEnd="@dimen/dp10"
+                        android:paddingStart="@dimen/dp10" />
+
+                    <LinearLayout
+                        android:id="@+id/noDataLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <include layout="@layout/no_data_layout" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    -->

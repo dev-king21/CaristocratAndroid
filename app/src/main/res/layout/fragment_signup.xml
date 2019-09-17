@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/dp26"
+            android:paddingStart="@dimen/dp26">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:fontFamily="@font/ailerons_typeface"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:text="@string/create_a_new_account"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp26" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/create_account_sub_heading"
+                android:textSize="@dimen/text_body_1" />
+
+            <com.ingic.caristocrat.helpers.CustomTextInputLayout
+                android:id="@+id/ilName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etName"
+                    style="@style/RegistrationInputLayoutOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="@string/name_digits"
+                    android:drawableStart="@drawable/name"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/full_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="32"
+                    android:singleLine="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:background="@color/colorTransparentGray" />
+
+            </com.ingic.caristocrat.helpers.CustomTextInputLayout>
+
+            <com.ingic.caristocrat.helpers.CustomTextInputLayout
+                android:id="@+id/ilEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    style="@style/RegistrationInputLayoutOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/email"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/email_address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:background="@color/colorTransparentGray" />
+
+            </com.ingic.caristocrat.helpers.CustomTextInputLayout>
+
+            <com.ingic.caristocrat.helpers.CustomTextInputLayout
+                android:id="@+id/ilPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        style="@style/RegistrationInputLayoutOptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/pass"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/ivShowPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="@dimen/dp6"
+                        android:paddingEnd="@dimen/dp10"
+                        android:paddingStart="@dimen/dp10"
+                        android:paddingTop="@dimen/dp16"
+                        android:src="@drawable/eye1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:background="@color/colorTransparentGray" />
+
+            </com.ingic.caristocrat.helpers.CustomTextInputLayout>
+
+            <com.ingic.caristocrat.helpers.CustomTextInputLayout
+                android:id="@+id/ilConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etConfirmPassword"
+                        style="@style/RegistrationInputLayoutOptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/pass"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/confirm_password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/ivShowConfirmPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="@dimen/dp6"
+                        android:paddingEnd="@dimen/dp10"
+                        android:paddingStart="@dimen/dp10"
+                        android:paddingTop="@dimen/dp16"
+                        android:src="@drawable/eye1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:background="@color/colorTransparentGray" />
+
+            </com.ingic.caristocrat.helpers.CustomTextInputLayout>
+
+            <com.ingic.caristocrat.helpers.CustomTextInputLayout
+                android:id="@+id/ilRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvRegion"
+                    style="@style/RegistrationInputLayoutOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/regional_specs_trade_screen"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/select_your_region"
+                    android:singleLine="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:background="@color/colorTransparentGray" />
+
+            </com.ingic.caristocrat.helpers.CustomTextInputLayout>
+
+            <com.ingic.caristocrat.helpers.CustomTextInputLayout
+                android:id="@+id/ilPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginBottom="@dimen/dp20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCodePicker"
+                            style="@style/RegistrationInputLayoutOptions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/downarrow"
+                            android:drawableStart="@drawable/number"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="+971"
+                            android:hint="@string/code" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp0.5"
+                            android:layout_marginTop="@dimen/dp4"
+                            android:background="@color/colorTransparentGray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/dp16">
+
+                        <EditText
+                            android:id="@+id/etNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/poppins_regular"
+                            android:hint="@string/phone_number_optional"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/dp6"
+                            android:paddingEnd="@dimen/dp16"
+                            android:paddingTop="@dimen/dp16"
+                            android:textColor="@color/colorInputText"
+                            android:textColorHint="@color/colorInputText"
+                            android:textSize="@dimen/text_body_2" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp0.5"
+                            android:layout_marginTop="@dimen/dp4"
+                            android:background="@color/colorTransparentGray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.ingic.caristocrat.helpers.CustomTextInputLayout>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                style="@style/CustomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/you_can_also_register_using_n_your_social_media_accounts"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp12" />
+
+                <ImageButton
+                    android:id="@+id/ibFb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp4"
+                    android:background="@drawable/new_fb" />
+
+                <ImageButton
+                    android:id="@+id/ibGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp4"
+                    android:background="@drawable/new_google" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

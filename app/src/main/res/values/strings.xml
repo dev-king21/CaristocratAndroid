@@ -1,0 +1,650 @@
+<resources>
+    <string name="app_name">Caristocrat</string>
+    <string name="g_api_key">AIzaSyBuvqtq7MJwPiS7EIRUqbGVsmxpXUzC29s</string>
+
+    <string name="close_app">Close App ?</string>
+    <string name="do_you_want_close_app">Are you sure you want to close the app?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Main Categories Names -->
+    <string name="cars">Cars</string>
+    <string name="auto_life">Auto Life</string>
+    <string name="education">Education</string>
+    <string name="women_only">Women Only</string>
+    <string name="consultant">Consultant</string>
+    <string name="luxury">Luxury</string>
+    <string name="caristo_club">Caristo Club</string>
+
+    <!-- Walkthrough -->
+    <string name="skip">SKIP</string>
+    <string name="next">NEXT</string>
+    <string name="welcome_to">WELCOME TO</string>
+    <string name="walkthrough_desc">Sample text:As harry squelched the deserted corridor he come across somebody who looked just as preoccupied as he was.Nearly Headless Nick, the ghost of Gryffindor Tower was starting morosely out of a window</string>
+    <string name="stay_ahead_of_the">STAY AHEAD OF THE</string>
+    <string name="competition_always">COMPETITION ALWAYS</string>
+    <string name="walkthrough_end_detail">Create an account with The Consultant to stay connected at all times, use multiple devices with the same account, get smart alerts and much more.</string>
+    <string name="sample_text">The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well.</string>
+    <string name="signup">SIGNUP</string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="click_here">Click Here</string>
+
+    <!-- Home -->
+    <string name="new_article">New Article</string>
+    <string name="new_articles">New Articles</string>
+
+    <!-- Subcategory Details News Item -->
+    <string name="dummy_date">July 04</string>
+    <string name="dummy_views_count">0</string>
+    <string name="dummy_likes_count">0</string>
+    <string name="dummy_comments_count">0</string>
+    <string name="featured_this_week">Featured This Week</string>
+    <string name="no_link_found">No Link Found</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="delete_comment">Delete Comment</string>
+    <string name="delete_comment_comfirmation">Are you sure you want to delete this Comment ?</string>
+    <string name="comment_deleted_successful">Comment Deleted Successfully</string>
+    <string name="comment_updated_successful">Comment Updated Successfully</string>
+
+    <!-- AutoLife -->
+    <string name="news">NEWS</string>
+    <string name="news_category_desc">Happenings from around the globe</string>
+    <string name="events">EVENTS</string>
+    <string name="interviews">INTERVIEWS</string>
+    <string name="test_drives">TEST DRIVES</string>
+    <string name="motor_sports">MOTOR SPORTS</string>
+
+    <!--Main Detail Page-->
+    <string name="why_you_really_want_that_ferrari">Why you really want that Ferrari?</string>
+    <string name="_174_comments">174 Comments</string>
+
+    <string name="write_a_comment">Write a comment…</string>
+    <string name="video_internet_error">The details contain a video, Kindly, connect through internet to play the video</string>
+    <string name="youtube_video_not_found">Youtube link is not found</string>
+
+    <!-- Profile -->
+    <string name="about_me">About Me</string>
+    <string name="my_favorites">My Favourites</string>
+    <string name="add_cars_you_own">Add Cars You Own</string>
+    <string name="please_select">Please Select</string>
+    <string name="sample_text_long">The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. <p>The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well.</p><p>The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well. The Android Toolbar has replaced the old action bar. It was introduced in API 21 (Android 5.0 Lollipop). In this tutorial we are going to implement it using the support v7 library. Our goal is to implement a toolbar with icons which is supported by older versions of Android as well.</p></string>
+    <string name="comment">Comment</string>
+    <string name="comments">Comments</string>
+    <string name="close">Close</string>
+    <string name="write_about">Write something about yourself…</string>
+    <string name="write_description">Write Description…</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="update">Update</string>
+    <string name="dummy_name">Jonathan Kent</string>
+    <string name="dummy_email">jonathankent@gmail.com</string>
+    <string name="dummy_number">+1 1234684684</string>
+    <string name="your_profile_is">Your Profile is</string>
+    <string name="profile_complete_percentage">30% complete</string>
+    <string name="complete">complete</string>
+    <string name="completed">Completed</string>
+    <string name="no_favorite_to_show">There is no Favorite to show</string>
+    <string name="minimum_age_error">Minimum required age is 1 year</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="years">Years</string>
+    <string name="my_evaluations">My Cars Evaluations</string>
+    <string name="account_deleted">Account Deactivated</string>
+    <string name="account_registered_with">Your account registered with</string>
+    <string name="email_address_has_been_deleted">has been deactivated successfully</string>
+    <string name="region">Region</string>
+
+    <!--Validation-->
+    <string name="err_passwords_match">Passwords do not match</string>
+    <string name="create_a_new_account">CREATE A NEW ACCOUNT</string>
+    <string name="create_an_account">Create an Account</string>
+
+    <string name="create_account_sub_heading">We just need a litte bit of information to get you signed up.</string>
+    <string name="full_name">Full Name</string>
+    <string name="version">Version</string>
+    <string name="version_optional">Version (Optional)</string>
+    <string name="email_address">Email Address</string>
+    <string name="nationality">Nationality</string>
+    <string name="enter_nationality">Enter Nationality</string>
+    <string name="select_nationality">Select Nationality</string>
+    <string name="profession">Profession</string>
+    <string name="enter_profession">Enter Profession</string>
+    <string name="select_date_of_birth">Select Date of Birth</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm__new_password">Confirm New Password</string>
+    <string name="code">Code</string>
+    <string name="phone_number_optional">Phone Number (Optional)</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="you_can_also_register_using_n_your_social_media_accounts">YOU CAN ALSO REGISTER USING \nYOUR SOCIAL MEDIA ACCOUNTS</string>
+    <string name="select_country">Select Country</string>
+    <string name="err_full_name">Full name should be at least 3 characters long</string>
+    <string name="err_year">Please select year</string>
+    <string name="err_km">Please enter KM</string>
+    <string name="err_phone">Enter valid phone number</string>
+    <string name="err_email">Please enter valid email address</string>
+    <string name="err_password">Password field cannot be empty</string>
+    <string name="err_empty_field">This field cannot be empty</string>
+    <string name="err_code">Please select country code</string>
+    <string name="welcome_back">WELCOME BACK</string>
+    <string name="signin_sub_heading">Glad you could join us again. \nPlease enter your details to login</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="login">Login</string>
+
+    <string name="trouble_login_in">Trouble Logging in?</string>
+    <string name="click_here_forget_pwd">Click here to retrieve your password.</string>
+    <string name="click_here_to_create_a_new_account">Click here to create a new account</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="forgot_pwd_sub_heading">Enter your email address and we\'ll send you a link to reset your password</string>
+    <string name="subscribe">Subscribe Now</string>
+    <string name="submit">SUBMIT</string>
+    <string name="subscribe_to_view">Subscribe to View</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="email_verification">EMAIL VERIFICATION</string>
+    <string name="email_verification_required">Email Verification Required</string>
+    <string name="email_verification_sub_heading">A verification code has been sent to your email address</string>
+    <string name="verify">VERIFY</string>
+    <string name="didn_t_receive_code">Didn\'t receive code ?</string>
+    <string name="click_here_to_resend_code_or_wait">Click here to resend code </string>
+    <string name="verification_message">A verfication code has been sent to your email address</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="enter_pin_code">Enter Pin Code</string>
+    <string name="simple_digits">ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,.;:[]{}?)(*^%$#@!-+ abcdefghijklmnopqrstuvwxyz</string>
+    <string name="name_digits">ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 abcdefghijklmnopqrstuvwxyz</string>
+    <string name="old_pass_new_pass_cannot">Old Password and New Password cannot be same.</string>
+    <string name="no_filter_applied">No Filter Applied</string>
+    <string name="ok">OK</string>
+    <string name="no_regions_try_later">Regions are being downloaded. Kindly wait for a while and try again.</string>
+    <string name="car_already_evaluated">This car has already been requested for evaluation!</string>
+    <string name="car_already_traded">This car has already been requested for trade in!</string>
+    <string name="write_comment_first">Write a comment first</string>
+    <string name="delete_account_confirmation">Are you sure, do you want to deactivate your account ?</string>
+    <string name="no_brand_found">No Brand Found</string>
+    <string name="no_comments_to_show">No Comments To Show</string>
+
+    <!-- ADD NEW CAR -->
+    <string name="add_car">Add Car</string>
+    <string name="edit_car">Edit Car</string>
+    <string name="choose_brand">Choose Brand / Make</string>
+    <string name="choose_model">Choose Model</string>
+    <string name="choose_year">Choose Year</string>
+    <string name="choose_variant">Choose Variant</string>
+    <string name="select_car">Select Car</string>
+    <string name="notification">Notification</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Deactivate Account</string>
+    <string name="settings">Settings</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="password_update">Password changed successfully</string>
+    <string name="logout_ques">Are you sure you want to logout?</string>
+    <string name="add_to_fav">Add To Favourite</string>
+    <string name="_37_likes">37 Likes</string>
+    <string name="_487_views">487 Views</string>
+    <string name="profile_updated">Profile updated successfully</string>
+    <string name="permission_denied">If you reject permission,you can not use this service\n\nPlease turn on permissions at [Setting] > [Permission]</string>
+    <string name="compressing_please_wait">Wait for compressing the media...</string>
+    <string name="complete_now">Complete Now</string>
+    <string name="join_the_club">Join the Club</string>
+    <string name="_00_00">00:00</string>
+    <string name="implemented_later">Will be implemented later</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="caristocrat_email">\@carstocrat.com</string>
+    <string name="facebook_app_id">218511165501901</string>
+    <string name="view">View</string>
+    <string name="views">Views</string>
+    <string name="like">Like</string>
+    <string name="likes">Likes</string>
+    <string name="api_key">AIzaSyBf-_cY6sSrQqTr9oR1BRmtbjk2E6Y5ep4</string>
+    <string name="success_add_fav">News added to favourite</string>
+    <string name="err_favorite">News removed from favourite</string>
+    <string name="remove_fav">Remove From Favourite</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="no_favourite">There is no Favourite to Show.</string>
+    <string name="no_news">There are no News to Show.</string>
+    <string name="no_user_detail">There is no Detail to Show.</string>
+    <string name="at">at</string>
+    <string name="app_requires_permissions">App requires some Permissions.</string>
+    <string name="required_permission_denied">Required Permissions have been denied.</string>
+    <string name="loading">Loading</string>
+    <string name="share_image_via">Share image via…</string>
+    <string name="share_video_link_via">Share Video Link via…</string>
+    <string name="colon_make">Make :</string>
+    <string name="colon_model">Model :</string>
+    <string name="colon_year">Year :</string>
+    <string name="colon_version">Version :</string>
+    <string name="colon_km">KM :</string>
+    <string name="colon_chassis">Chassis :</string>
+    <string name="colon_regional_specs">Regional Specs :</string>
+    <string name="colon_exterior_color">Exterior Color :</string>
+    <string name="colon_interior_color">Interior Color :</string>
+    <string name="colon_warranty_remaining">Warranty Remaining :</string>
+    <string name="colon_service_remaining">Service Remaining :</string>
+    <string name="colon_accident">Accident :</string>
+    <string name="colon_engine">Engine :</string>
+
+    <!-- Stay Updated -->
+    <string name="stay_updated">Stay Updated</string>
+    <string name="get_price_alerts">Get price alerts, message sellers and get updates on your favorites cars.</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="maybe_later">Maybe Later</string>
+
+    <!-- Request Consultancy -->
+    <string name="ask_for_consultancy">Ask for Consultancy</string>
+    <string name="request_consultancy">Request Consultancy</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="personal_shopper">Personal Shopper</string>
+    <string name="drop_us_details">Just drop us your contact details and we will be in touch right away</string>
+    <string name="read_more">Read More …</string>
+    <string name="read_less">Read Less …</string>
+
+    <!--Luxury Market-->
+    <string name="welcome_to_luxury_market">Welcome to Luxury Market.</string>
+    <string name="luxury_market_body1">If you\'re looking for expert suggestion on buying your brand new dream car or looking for pre-approved vehicles then you are at the perfect place!</string>
+    <string name="luxury_market_body2"><![CDATA[If you are looking for help with the purchase of a new vehicle, select <b><font color=#000000>The Outlet.</font></b> If you wish to see our collection of pre-approved vehicles, plese select <b><font color=#000000>Pre-Approved.</font></b>]]></string>
+    <!--<string name="luxury_market_body2">If you are looking for help with the purchase of a new vehicle, select <b>The Outlet.</b> If you wish to see our collection of pre-approved vehicles, plese select <b>Pre-Approved.</b></string>-->
+    <string name="the_outlet_mall">THE OUTLET MALL</string>
+    <string name="approved_pre_owned">APPROVED PRE OWNED</string>
+    <string name="limited_edition">LIMITED EDITION</string>
+    <string name="the_outlet_mall_desc">Your luxury car search ends here.</string>
+    <string name="luxury_market">LUXURY MARKET</string>
+    <string name="luxury_new_cars">LUXURY NEW CARS</string>
+
+    <!-- Luxury Market Details -->
+    <string name="luxury_bentley">Luxurious Bentley Continental GT</string>
+    <string name="zero_mileage">2013 - Zero mileage vehicle</string>
+    <string name="aed_95000">AED 95,000</string>
+    <string name="avg_mkp">A.V.G M.K.P 90,0000</string>
+    <string name="al_tayer_motors">Al Tayer Motors</string>
+    <string name="dubai_investment_park">Dubai Investment Park - 2, Dubai , UAE.</string>
+    <string name="report_this_listing">Report This Listing</string>
+    <string name="dummy_km">27,000 km</string>
+    <string name="dummy_year">2017</string>
+    <string name="land_rover">Land Rover</string>
+    <string name="aed_15000">AED 0</string>
+    <string name="aed">AED\u0020</string>
+    <string name="similar_listings">Similar Listings</string>
+    <string name="key">Key</string>
+    <string name="value">value</string>
+    <string name="virtual_buy">Virtual Buy</string>
+    <string name="my_personal_shopper">My Personal Shopper</string>
+    <string name="car_favorite">Car added in Favourite</string>
+    <string name="car_remove_favorite">Car removed from Favourite</string>
+    <string name="listing_reported">Listing Reported</string>
+    <string name="dimensions_weight">Dimensions &amp; Weight</string>
+    <string name="seating_capacity">Seating Capacity</string>
+    <string name="drive_train">Drivetrain</string>
+    <string name="engine">Engine</string>
+    <string name="performance">Performance</string>
+    <string name="brakes">Brakes</string>
+    <string name="suspension">Suspension</string>
+    <string name="wheels_tyres">Wheels &amp; Tyres</string>
+    <string name="fuel">Fuel</string>
+    <string name="emission">Emission</string>
+    <string name="warranty_maintenance">Warranty &amp; Maintenance</string>
+    <string name="lifecycle">Lifecycle (Est.)</string>
+    <string name="deprecation_trend">Depreciation Trend (Est.)</string>
+    <string name="production_start_year">Production Start Year</string>
+    <string name="production_exp_end">Production End Year</string>
+    <string name="original_price">Original Price</string>
+    <string name="call_now">Call Now</string>
+    <string name="request_call">Request A Call</string>
+    <string name="starting_from">Starting From</string>
+    <string name="current_market">Current Market</string>
+    <string name="featured">Featured</string>
+    <string name="search_car">Search Car …</string>
+    <string name="add_a_review_n">Add a Review</string>
+
+    <!-- Contact Dealer -->
+    <string name="contact">Contact</string>
+    <string name="contact_dealer">Contact Dealer</string>
+    <string name="call">Call</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm Call</string>
+
+    <!-- Luxury Market Filter -->
+    <string name="clear">Clear</string>
+    <string name="filter">Filter</string>
+    <string name="filter_by_brand">Filter by Brand</string>
+    <string name="filter_by_region">Filter by Region</string>
+    <string name="filter_by_country">Filter by Country</string>
+    <string name="filter_by_version">Filter by Version</string>
+    <string name="write_version_name">Write Version Name …</string>
+    <string name="select_make">Select Make</string>
+    <string name="select_your_region">Select Your Region</string>
+    <string name="select_your_new_region">Select Your New Region</string>
+    <string name="region_updated_successfully">Region Updated Successfully</string>
+    <string name="select_regions">Select Regions</string>
+    <string name="select_countries">Select Countries</string>
+    <string name="transmission">Transmission</string>
+    <string name="automatic">Automatic</string>
+    <string name="manual">Manual</string>
+    <string name="price_range">Price Range</string>
+    <string name="price">Price</string>
+    <string name="model_year">Model Year</string>
+    <string name="mileage">Mileage</string>
+    <string name="separator_text">\t-\t</string>
+    <string name="currency_unit">AED</string>
+    <string name="currency_unit_t">AED\t</string>
+    <string name="mileage_unit">Km</string>
+    <string name="mileage_unit_t">Km\t</string>
+    <string name="classic_2018">Classic - 2018</string>
+    <string name="classic">Classic</string>
+    <string name="body_style">Body Style</string>
+    <string name="apply">Apply</string>
+    <string name="brands">Brands</string>
+    <string name="clear_filters">Clear Filter</string>
+    <string name="do_you_want_to_clear_filter">Do you want to clear search filter ?</string>
+    <string name="filter_cleared">Filter Cleared</string>
+    <string name="search_brands">Search Brands …</string>
+    <string name="no_brands_show">There are no brands to show.</string>
+    <string name="no_brands_search">There are no brands to search.</string>
+    <string name="no_models_to_show">No Models to Show</string>
+    <string name="no_versions_to_show">No Versions to Show</string>
+    <string name="models">Models</string>
+    <string name="versions">Versions</string>
+    <string name="year_1901">1901</string>
+    <string name="year_2000">2000</string>
+    <string name="budget">Budget</string>
+    <string name="segment">Segment</string>
+    <string name="dealer_type">Dealer Type</string>
+    <string name="official_dealer">Official Dealer</string>
+    <string name="market_dealer">Market Dealer</string>
+    <string name="close_apply">Press on CLOSE or APPLY to close Filter</string>
+    <string name="back_close">Click BACK or CLOSE to close Brands</string>
+    <string name="back_select">Click BACK or SELECT to select Models</string>
+
+    <!--Notifications-->
+    <string name="notifications">Notifications</string>
+    <string name="notifications_settings_updated">Notification Settings Updated</string>
+    <string name="delete_notification">Delete Notification</string>
+    <string name="delete_notification_confirmation">Are you sure, you want to delete this notification ?</string>
+    <string name="car_title_colon">Car Title:</string>
+    <string name="model_colon">Model:</string>
+    <string name="chassis_colon">Chassis:</string>
+
+    <!--TradeIn-->
+    <string name="my_trades_in">My Trade Ins</string>
+    <string name="bid">Offer</string>
+    <string name="bid_hash">Offer #</string>
+
+    <!--OutletMall-->
+    <string name="the_best_cars_in_dubai_for_those_who_want_nothing_less">The best cars in Dubai for those who want nothing less</string>
+    <string name="discover">Discover</string>
+    <string name="most_viewed">Most Viewed</string>
+
+    <!--Select country-->
+    <string name="remember_my_selection_for_next_time">Remember my selection for next time</string>
+    <string name="ksa">KSA</string>
+    <string name="europe">EUROPE</string>
+    <string name="dubai">DUBAI</string>
+    <string name="egypt">EGYPT</string>
+    <string name="uk">UK</string>
+    <string name="usa">USA</string>
+
+    <!--Trade In Your Car-->
+    <string name="trade_in_your_car_sub_heading">Enter the details of your car</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="model_details">Model Details</string>
+    <string name="year">Year</string>
+    <string name="km">KM</string>
+    <string name="trim">Trim</string>
+    <string name="regional_specs">Regional Specs</string>
+    <string name="regional_specification">Regional Specification</string>
+    <string name="accident">Accident?</string>
+    <string name="exterior_color">Exterior Color</string>
+    <string name="interior_color">Interior Color</string>
+    <string name="engine_type">Engine Type</string>
+    <string name="warranty_remaining">in month(s)</string>
+    <string name="service_warranty_remaining">in month(s)</string>
+    <string name="rmng_warranty">RMNG. WARRANTY</string>
+    <string name="chassis">Chassis</string>
+    <string name="trade_in_your_car">Trade In Your Car</string>
+    <string name="upload_upto_5_images">Upload Images</string>
+    <string name="additional_notes_if_any">Additional notes (if any)</string>
+    <string name="disclaimer"><b>Disclaimer!</b> Lorem ipsum color sit amet, consectetur Lorem ipsum color sit amet, consectetur Lorem ipsum color sit amet, consectetur Lorem ipsum color sit amet, consectetur Lorem ipsum color sit amet, consectetur Lorem ipsum color sit amet, consectetur </string>
+    <string name="images_limit_error">Images count can\'t exceed limit of 5</string>
+    <string name="err_chassis">Please enter Chassis</string>
+    <string name="enter_trim_value">Enter Trim Value</string>
+    <string name="enter_warranty_remaining">Enter Warranty Remaining</string>
+    <string name="enter_service_warranty_remaining">Enter Service Warranty Remaining</string>
+    <string name="enter_rmng_warranty">Enter RMNG. WARRANTY</string>
+    <string name="select_engine_type">Select Engine Type</string>
+    <string name="images_error">Select atleast 1 image</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="err_make">Please select make</string>
+    <string name="err_model">Please select model</string>
+    <string name="err_specs">Please select regional specs</string>
+    <string name="err_accident">Please select accident</string>
+    <string name="err_exterior_color">Please select exterior color</string>
+    <string name="err_interior_color">Please select interior color</string>
+    <string name="make_first_error">Please select make first</string>
+    <string name="cannot_share_name">Cannot share details without name.</string>
+    <string name="cannot_share_image">Cannot share details without Image.</string>
+    <string name="requested">Requested</string>
+    <string name="request_successful">Request Successful</string>
+    <string name="request_has_been_consultancy">Request has been registered for consultancy</string>
+    <string name="no_car_to_show">No Car to show</string>
+    <string name="add_new_car">Add New Car</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="my_cars">My Cars</string>
+    <string name="select_your_car_trade_or_add_car">Select your car or add a new car to make trade request</string>
+    <string name="select_your_car_evaluate_or_add_car">Select your car or add a new car to get Evaluated</string>
+    <string name="select_a_car">Select A Car</string>
+    <string name="trade_in_car">Trade Car</string>
+    <string name="trade_in_confirm">Kindly confirm, do you want to trade in</string>
+    <string name="evaluate_confirm">Kindly confirm, do you want to generate an evaluate request for </string>
+    <string name="yes_trade_in">Yes, Trade In</string>
+    <string name="ok_go_back">Okay, Go Back</string>
+    <string name="there_is_no_trading">No Trading To Show</string>
+    <string name="trading_amount">Trading Amount</string>
+    <string name="enter_trading_amount">Enter Trading Amount</string>
+    <string name="example_1000">Example: 1000</string>
+    <string name="no_models_found">No Model Found</string>
+    <string name="server_error">Server Error</string>
+    <string name="delete_image">Delete Image</string>
+    <string name="delete_image_confirmation">Are you sure, you want to delete this image ?</string>
+    <string name="front_image">Front</string>
+    <string name="back_image">Back</string>
+    <string name="right_image">Right Side</string>
+    <string name="left_image">Left Side</string>
+    <string name="interior_image">Interior</string>
+    <string name="registration_image">Registration Card</string>
+    <string name="added_car_evaluation_message">Your car was added successfully. Do you want to evaluate your car now ?</string>
+    <string name="later">Later</string>
+    <string name="evaluate_car">Evaluate Car</string>
+    <string name="evaluation_request_success">Evaluation Request has been generated successfully.</string>
+
+    <!--TradeInPopup-->
+    <string name="we_will_be_in_touch">WE WILL BE IN TOUCH</string>
+    <string name="thankyou">Thankyou!</string>
+    <string name="market_experts_will_evaluate_your_car_and_come_back_to_you_with_best_prices">Market experts will evaluate your car and come back to you with best prices.</string>
+    <string name="car_added_successful">Car Added Successfully</string>
+    <string name="car_updated_successful">Car Information Updated Successfully</string>
+
+    <!--TradeInDetail-->
+    <string name="model_chassis_number"><![CDATA[<b><font color=#000000>Bentley model</font></b> with <b><font color=#0000000>Chassis number 151848</font></b>]]></string>
+    <string name="here_are_top_5_offers_for_your_vehicle">Here are the top offers for your car</string>
+    <string name="here_are_top_5">Here are top 5 offers for your</string>
+    <string name="with">with</string>
+    <string name="chassis_num">Chassis number</string>
+    <string name="AED">AED</string>
+    <string name="offered_price">Offered Price</string>
+    <string name="OK">ok</string>
+    <string name="err_select_region">Please select atleast one region</string>
+    <string name="specifications">Specifications</string>
+    <string name="spam">Spam or misleading</string>
+    <string name="fake_details">Fake Details</string>
+    <string name="other">Other</string>
+    <string name="enter">Enter</string>
+    <string name="err_reason">Please enter reason for reporting</string>
+    <string name="err_report">Select atleast one reason for reporting</string>
+    <string name="description">Description</string>
+    <string name="select">Select</string>
+    <string name="car_owner">Car Owner</string>
+    <string name="my_car">My Car</string>
+    <string name="phone_number_not_found">Phone Number Not Found</string>
+    <string name="there_are_no_offers">There are no offers to show</string>
+    <string name="waiting_for_results">Waiting for Results</string>
+    <string name="no_offer_available">No Offer Available</string>
+    <string name="waiting_for_offer">Waiting For Offer</string>
+    <string name="dealers">Dealers</string>
+
+    <!-- Compare Cars -->
+    <string name="compare">Compare</string>
+    <string name="compare_any_car">Compare any car</string>
+    <string name="compare_segment_video">Compare segment wise</string>
+    <string name="user_this_section_to_compare">Use this section to compare cars</string>
+    <string name="start_typing_car_model">Start typing car model</string>
+    <string name="chassis_number">Chassis Number</string>
+    <string name="add_two_or_more_cars">Add two or more cars using the search panel to compare</string>
+    <string name="select_brand">Select Brand</string>
+    <string name="select_model">Select Model</string>
+    <string name="select_year">Select Year</string>
+    <string name="select_version">Select Version</string>
+    <string name="add_more_car">Add More Car</string>
+    <string name="compare_cars">Compare Cars</string>
+    <string name="select_2_car_compare">Select at least 2 cars to compare</string>
+    <string name="remove_car">Delete Car</string>
+    <string name="remove_car_confirmation">Are you sure you want to delete this car ?</string>
+    <string name="remove">Remove</string>
+    <string name="no_car_found">No Car Found</string>
+    <string name="no_model_found">No Models Found</string>
+    <string name="remaining_lifecycle">Remaining Lifecycle</string>
+
+    <!-- Virtual Buy -->
+    <string name="finance_buy">Finance Buy</string>
+    <string name="cash_buy">Cash Buy</string>
+    <string name="period">Period</string>
+    <string name="down_payment">Down Payment</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="insurance_rate">Insurance Rate</string>
+    <string name="months_12">12 Months</string>
+    <string name="months_60">60 Months</string>
+    <string name="percentage_0">0 %</string>
+    <string name="percentage_75">75 %</string>
+    <string name="percentage_30">30 %</string>
+    <string name="percentage_10">10 %</string>
+    <string name="enquire_now">Enquire Now</string>
+    <string name="finance_breakdown">Finance Breakdown</string>
+    <string name="total_car_price">Total Car Price</string>
+    <string name="monthly_installment">Monthly Installment</string>
+    <string name="months">Months</string>
+    <string name="driveaway_payment">Driveaway Payment</string>
+    <string name="insurance_first_year">Insurance (1st Year)</string>
+    <string name="registration_fee">Registration Fee</string>
+    <string name="total_upfront_payment">Total Upfront Payment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Notifications -->
+    <string name="no_notifications_show">No Notifications to Show</string>
+    <string name="add_two_or_more_cars_to_compare">Add two or more cars to compare</string>
+    <string name="professional_comparison_of_vehicles_from_the_same_segments">Professional comparison of cars from the same segments</string>
+    <string name="results">Results</string>
+    <string name="there_is_no_data_to_compare">There is no car to compare</string>
+    <string name="car_exist_error">Car already exist in the list</string>
+    <string name="comparision_with_one_car">Select another car</string>
+
+
+    <!-- Review Module -->
+    <string name="reviews">Reviews</string>
+    <string name="all_cars">All Cars</string>
+    <string name="recently_viewed">Recently Viewed</string>
+    <string name="expert_reviews_who_care">Expert reviews for those who care</string>
+    <string name="rating_5">5.0</string>
+    <string name="tap_to_rate">Tap To Rate</string>
+    <string name="read_all_reviews">Read All Reviews</string>
+    <string name="all_reviews">All Reviews</string>
+    <string name="add_detailed_review">Add a Detailed Review</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="minimum_rating">Minimum Rating</string>
+    <string name="write_review_details">Write Review Details</string>
+    <string name="no_review_to_show">No Review to Show</string>
+    <string name="no_review_comment_added">No Review Comment Added</string>
+    <string name="review_already">You have already submitted the review</string>
+    <string name="related_cars">Related Cars</string>
+    <string name="there_is_no_enough_car_to_compare">There is not enough car to compare with</string>
+    <string name="no_make_found">No make found</string>
+    <string name="add_a_review">Add a review (optional)</string>
+    <string name="consumer_reviews">User Reviews</string>
+    <string name="latest_reviews">Latest Reviews</string>
+    <string name="highest_reviews">Highest Ratings</string>
+    <string name="lowest_reviews">Lowest Ratings</string>
+    <string name="num_reviews">No. of Reviews</string>
+    <string name="newest_to_oldest">Newest to Oldest</string>
+    <string name="oldest_to_newest">Oldest to Newest</string>
+    <string name="price_lowest">Lowest Price</string>
+    <string name="price_highest">Highest Price</string>
+    <string name="your_ratings">Your Ratings</string>
+    <string name="select_atleast_1_star">Select at least 1 star to rate on all attributes</string>
+    <string name="read_more_w">Read more</string>
+
+    <!-- Compare -->
+    <string name="sport">Sport</string>
+    <string name="less_than_year">&lt; 1 Year</string>
+
+    <!-- Guest Module -->
+    <string name="require_signin">Require Signin</string>
+    <string name="signin_required"> Sign in Required</string>
+
+    <string name="skip_signin">Login As Guest</string>
+    <string name="require_signin_message">This action requires a user signin. Do you want to signin ?</string>
+    <string name="require_signin_message_notification">You need to sign in to your account to see your Notifications. Do you want to signin ?</string>
+    <string name="require_signin_message_profile">You need to sign in to your account to see your Profile. Do you want to signin ?</string>
+    <string name="require_signin_evaluate">You need to sign in to your account to see the list of your cars and get them evaluated. Do you want to signin ?</string>
+    <string name="require_signin_trade">You need to sign in to your account to see the list of your cars and get them trade. Do you want to signin ?</string>
+    <string name="require_signin_review_post">You need to sign in to submit your review. Do you want to signin ?</string>
+    <string name="require_signin_bank">You need to sign in to request a call on this bank. Do you want to signin ?</string>
+    <string name="require_signin_insurance">You need to sign in to request a call on this insurance company. Do you want to signin ?</string>
+    <string name="sign_in_required">To complete this action, you must be logged in! </string>
+    <string name="you_need_to_sign_in">You need to sign in to </string>
+
+    <string name="do_you_want_to_sign_in">Do you want to signin ? </string>
+
+    <!-- New Messages -->
+    <string name="success_ex">Success !</string>
+    <string name="added_car_successfully">You added your car successfully !</string>
+    <string name="evaluate_your_car">Evaluate Your Car</string>
+    <string name="submit_your_car_evaluation">Do you want to submit your car for evaluation ?</string>
+    <string name="latest_car_reviews_ratings">Latest car reviews and ratings by the customers</string>
+    <string name="specifications_prices">The specifications and prices of the latest luxury cars</string>
+    <string name="best_deals_look_for">The Best Deals you could ever look for</string>
+    <string name="looking_peace_mind">For those who are looking for peace of mind</string>
+    <string name="oldiest_goldies">Oldies but Goldies</string>
+    <string name="favorites_not_added">You have not added anything in your favorites</string>
+    <string name="two_car_detailed">Select two or more cars and see the detailed comparison</string>
+    <string name="professional_comparison">Professional Comparison</string>
+    <string name="most_popular_car_reviews">Most Popular Car Reviews</string>
+    <string name="detailed_review_optional">Detailed Review (Optional)</string>
+    <string name="what_others_shopper">What other shoppers should know before buying this car ?</string>
+    <string name="received_your_details">We have received your details. One of our experts will be in touch with you shortly!</string>
+    <string name="would_you_like">Would you like to call</string>
+    <string name="select_add_new_car_evaluation">Select a car from below or add a new one for evaluation</string>
+    <string name="select_add_new_car_trade">Select a car from below or add a new one for Trade in</string>
+    <string name="car_details_will_be_send">Your car details will be sent to the Dealer of the car you are interested in</string>
+    <string name="dealer_will_send_you">The Dealer will send you an offer within 24 to 48 hours</string>
+    <string name="all_offers_are_send_by">All offers are sent by the Dealers and Caristocrat is not involved in the offers</string>
+    <string name="visit_dealers_5">Visit the Dealers (who placed an offer for your car) within 5 working days for physical inspection and offer confirmation</string>
+    <string name="car_details_top_dealers">Your car details will be sent to the top Dealers</string>
+    <string name="best_offers_within">Within 24 to 48 hours, you will receive the best offers for your car</string>
+    <string name="car_evaluation_from_dealers">Car Evaluation From Dealers</string>
+    <string name="submit_your">Please confirm, do you want to submit your </string>
+    <string name="trade_in_request">Trade In Request</string>
+    <string name="for_evaluation_q">for evaluation ?</string>
+    <string name="for_tradein_q">for trade in ?</string>
+    <string name="i_have_read">I have read and agreed with the</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="agree_terms_of_use">You must read and agree with the terms of use.</string>
+    <string name="the_bank_received">The Bank has received your details. You will receive a call back shortly!</string>
+    <string name="the_insurance_received">The Insurance Company has received your details. You will receive a call back shortly!</string>
+    <string name="write_to_us">Write to us with your query and we will get back to you.</string>
+    <string name="all_models">All Models</string>
+    <string name="all_versions">All Versions</string>
+
+</resources>

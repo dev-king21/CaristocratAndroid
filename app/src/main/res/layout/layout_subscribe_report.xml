@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_round_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dp15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="SUBSCRIPTION PLANS"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp20" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Subscribe to one of the below plans to access reports"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp14" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginBottom="@dimen/_8dp">
+
+            <RadioButton
+                android:id="@+id/singleReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:button="@drawable/select_country_selector"
+                android:checked="true"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingLeft="@dimen/dp8"
+                android:paddingRight="@dimen/dp8"
+                android:textStyle="bold"
+                android:text="Single Report AED 300"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_body_1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You will be able to view only this report for one year"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="@dimen/dp10"
+                android:textSize="@dimen/sp15" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:background="@color/colorTransparentGray" />
+            <RadioButton
+                android:id="@+id/allReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:button="@drawable/select_country_selector"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingLeft="@dimen/dp8"
+                android:paddingRight="@dimen/dp8"
+                android:textStyle="bold"
+                android:text="All reports AED 2,000"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_body_1" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unlimited access to view all reports worth AED 4,000 for one year"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="@dimen/dp10"
+                android:textSize="@dimen/sp15" />
+
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/btnSubscribe"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/subscribe" />
+    </LinearLayout>
+
+</layout>

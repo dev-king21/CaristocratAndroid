@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llSpecsChildLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/specs_bg"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp16"
+            android:paddingTop="@dimen/dp8"
+            android:paddingEnd="@dimen/dp4"
+            android:paddingBottom="@dimen/dp8">
+
+
+            <ImageView
+                android:id="@+id/ivSpecsImage"
+                android:layout_width="@dimen/dp28"
+                android:layout_height="@dimen/dp28"
+                android:src="@drawable/phone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/dp8"
+                android:paddingEnd="@dimen/dp8">
+
+                <TextView
+                    android:id="@+id/tvKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/poppins_light"
+                    android:singleLine="true"
+                    android:text="@string/key"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorInputText"
+                    android:textSize="@dimen/sp11" />
+
+                <TextView
+                    android:id="@+id/tvValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/poppins_light"
+                    android:singleLine="true"
+                    android:text="@string/value"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingStart="@dimen/dp16"
+            android:paddingTop="@dimen/dp12"
+            android:paddingEnd="@dimen/dp16"
+            android:paddingBottom="@dimen/dp12"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</layout>

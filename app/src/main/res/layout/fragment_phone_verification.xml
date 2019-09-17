@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/dp26"
+            android:paddingStart="@dimen/dp26">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:fontFamily="@font/ailerons_typeface"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="@string/email_verification"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp26" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp25"
+                android:gravity="center"
+                android:text="@string/email_verification_sub_heading"
+                android:textSize="@dimen/text_body_1" />
+
+            <com.ingic.caristocrat.helpers.PinEntryEditText
+                android:id="@+id/pinView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp20"
+                android:cursorVisible="true"
+                android:digits="1234567890"
+                android:fontFamily="@font/poppins_regular"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@color/colorBlack"
+                android:textColorLink="@color/colorInputText"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/sp20"
+                app:pinLineColors="@color/colorInputText" />
+
+            <Button
+                android:id="@+id/btnVerify"
+                style="@style/CustomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/verify" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp10"
+            android:text="@string/didn_t_receive_code"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_body_2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp8">
+
+            <TextView
+                android:id="@+id/tvResend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:enabled="false"
+                android:text="@string/click_here_to_resend_code_or_wait"
+                android:textSize="@dimen/text_body_2" />
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp6"
+                android:text="@string/_00_00"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_body_2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

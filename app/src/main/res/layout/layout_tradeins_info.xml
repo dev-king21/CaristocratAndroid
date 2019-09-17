@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dp16"
+            android:paddingEnd="@dimen/dp16"
+            android:paddingBottom="@dimen/dp16">
+
+            <TextView
+                android:id="@+id/tvBidNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp8"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/bid"
+                android:textColor="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ingic.caristocrat.helpers.RoundImageView
+                    android:id="@+id/rivProfilePic"
+                    android:layout_width="@dimen/dp36"
+                    android:layout_height="@dimen/dp36"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar_place_holder" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:layout_marginEnd="@dimen/dp8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="1"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorBlack"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/llOfferedPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvOfferedPricePrefixed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:maxLines="1"
+                            android:text="@string/offered_price"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp13" />
+
+                        <TextView
+                            android:id="@+id/tvOfferedPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp8"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp13"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/ibCallConsultant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="@dimen/dp8"
+                    android:src="@drawable/phone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp8"
+            android:background="@color/bg_gray" />
+    </LinearLayout>
+</layout>

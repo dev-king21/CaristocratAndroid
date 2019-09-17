@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:id="@+id/layout"--><!--android:layout_width="wrap_content"--><!--android:layout_height="@dimen/dp50"--><!--android:background="@color/colorLightWhite"--><!--android:orientation="horizontal">-->
+
+<!--<LinearLayout--><!--android:layout_width="wrap_content"--><!--android:layout_height="match_parent"--><!--android:layout_weight="1"--><!--android:background="@color/colorLightWhite"--><!--android:orientation="vertical">--><!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="@dimen/dp1"--><!--android:background="@color/colorDivider" />--><!--<TextView--><!--android:id="@+id/tvColumnHeader"--><!--android:layout_width="wrap_content"--><!--android:layout_height="match_parent"--><!--android:layout_gravity="center"--><!--android:layout_weight="1"--><!--android:singleLine="true"--><!--android:ellipsize="marquee"--><!--android:fontFamily="@font/poppins_regular"--><!--android:background="@color/colorLightWhite"--><!--android:gravity="center"--><!--android:padding="@dimen/dp8"--><!--android:text="@string/cars"--><!--android:textColor="@color/colorBlack"--><!--android:textSize="@dimen/sp16"--><!--android:textStyle="bold" />-->
+
+
+<!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="@dimen/dp1"--><!--android:background="@color/colorDivider" />--><!--</LinearLayout>-->
+
+<!--<View--><!--android:layout_width="@dimen/dp1"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentEnd="true"--><!--android:background="@color/colorDivider" />--><!--</LinearLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/column_header_container"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp50"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="top"
+            android:background="@color/colorDivider" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorDivider"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvColumnHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightWhite"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/dp8"
+                    android:singleLine="true"
+                    android:text="@string/cars"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp12"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorDivider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorDivider" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:background="@color/colorDivider" />
+</RelativeLayout>

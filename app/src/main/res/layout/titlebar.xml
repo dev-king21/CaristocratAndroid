@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rlTitlebarMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/etTitlebarSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:digits="@string/name_digits"
+            android:fontFamily="@font/poppins_light"
+            android:hint="@string/search_brands"
+            android:imeOptions="actionSearch"
+            android:paddingStart="@dimen/dp48"
+            android:paddingEnd="@dimen/dp48"
+            android:singleLine="true"
+            android:textSize="@dimen/text_button"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TitlebarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:maxWidth="256dp"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textSize="@dimen/sp22" />
+
+        <ImageButton
+            android:id="@+id/ibBackbtn"
+            style="@style/TitlebarActionItem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/backbtn" />
+
+        <ImageButton
+            android:id="@+id/ibSort"
+            style="@style/TitlebarActionItem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/ibBackbtn"
+            android:layout_toRightOf="@+id/ibBackbtn"
+            android:src="@drawable/sort"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvLink"
+            style="@style/TitlebarTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ibBackbtn"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingStart="@dimen/dp16"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvClose"
+            style="@style/TitlebarActionItem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:text="@string/close"
+            android:textAllCaps="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rlNotification"
+            style="@style/TitlebarActionItem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/notification" />
+
+            <FrameLayout
+                android:id="@+id/flNotificationCount"
+                android:layout_width="@dimen/dp16"
+                android:layout_height="@dimen/dp16"
+                android:layout_marginStart="@dimen/dp10"
+                android:background="@drawable/notification_circle"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvNotificationCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="00"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="8sp" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llOther"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibLike"
+                style="@style/TitlebarActionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/like"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibSearch"
+                style="@style/TitlebarActionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/search"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibHome"
+                style="@style/TitlebarActionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/home"
+                android:visibility="gone" />
+            <!--<LinearLayout-->
+            <!--android:id="@+id/llProfileButton"-->
+            <!--style="@style/TitlebarActionItem"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center">-->
+            <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/llProfileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                app:rb_color="@android:color/darker_gray"
+                app:rb_duration="3000"
+                app:rb_radius="12dp"
+                app:rb_rippleAmount="4"
+                app:rb_scale="2">
+
+
+                <FrameLayout
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@drawable/top_circle">
+
+                    <com.ingic.caristocrat.helpers.RoundImageView
+                        android:id="@+id/rivProfilePic"
+                        android:layout_width="@dimen/dp28"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dp2"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:layout_marginEnd="@dimen/dp2"
+                        android:src="@drawable/avatar_place_holder" />
+
+                </FrameLayout>
+
+            </com.skyfishjy.library.RippleBackground>
+            <!--</LinearLayout>-->
+
+            <!--  <ImageButton
+                  android:id="@+id/ibLikeWhite"
+                  style="@style/TitlebarActionItem"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/heart_add_to_favorites"
+                  android:visibility="gone" />-->
+            <com.like.LikeButton
+                android:id="@+id/ibLikeWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:paddingStart="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                android:visibility="gone"
+                app:anim_scale_factor="2"
+                app:circle_end_color="@color/colorWhite"
+                app:circle_start_color="@color/colorWhite"
+                app:dots_primary_color="@color/colorWhite"
+                app:dots_secondary_color="@color/colorWhite"
+                app:icon_size="20dp"
+                app:icon_type="heart"
+                app:is_enabled="true"
+                app:like_drawable="@drawable/heart2_header"
+                app:liked="false"
+                app:unlike_drawable="@drawable/heart_header" />
+
+            <ImageButton
+                android:id="@+id/ibShare"
+                style="@style/TitlebarActionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/share"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibAddFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp4"
+                android:background="@null"
+                android:paddingStart="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:paddingEnd="@dimen/dp12"
+                android:paddingBottom="@dimen/dp2"
+                android:src="@drawable/add_fav"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibSettings"
+                style="@style/TitlebarActionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/settings"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvCancel"
+                style="@style/TitlebarActionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:text="@string/clear"
+                android:textAllCaps="true"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibFilter"
+                style="@style/TitlebarActionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/filter"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibAddCar"
+                style="@style/TitlebarActionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/add"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

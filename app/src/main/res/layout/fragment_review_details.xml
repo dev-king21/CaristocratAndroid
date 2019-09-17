@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlSlider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp300">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/image_placeholder" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.4"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:alpha="0.4"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow1" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/circlePageIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_alignParentBottom="true"
+                    app:ci_drawable="@drawable/slider4"
+                    app:ci_drawable_unselected="@drawable/slider3"
+                    app:ci_height="@dimen/dp4"
+                    app:ci_margin="@dimen/dp2"
+                    app:ci_width="@dimen/dp4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="start">
+
+                        <ImageButton
+                            android:id="@+id/ibBackbtn"
+                            style="@style/TitlebarActionItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/backbtn_white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="end">
+
+                        <com.like.LikeButton
+                            android:id="@+id/ibLikeWhite"
+                            style="@style/TitlebarActionItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:anim_scale_factor="2"
+                            app:icon_size="@dimen/dp24"
+                            app:icon_type="heart"
+                            app:is_enabled="true"
+                            app:like_drawable="@drawable/new_heart_liked"
+                            app:liked="false"
+                            app:unlike_drawable="@drawable/new_heart_unliked" />
+
+                        <ImageButton
+                            android:id="@+id/ibShare"
+                            style="@style/TitlebarActionItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/share" />
+
+                        <ImageButton
+                            android:id="@+id/ibAddFav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/dp4"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/dp0.5"
+                            android:paddingEnd="@dimen/dp12"
+                            android:paddingStart="@dimen/dp10"
+                            android:paddingTop="@dimen/dp10"
+                            android:src="@drawable/add_fav"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp16">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvOutMallTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_regular"
+                        android:lineSpacingExtra="-10dp"
+                        android:maxLines="2"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvModelYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/dp8"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/aed_95000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <hyogeun.github.com.colorratingbarlib.ColorRatingBar
+                        android:id="@+id/ratingbar"
+                        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp16"
+                        android:layout_gravity="end"
+                        android:isIndicator="true"
+                        app:changeable="false"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        app:empty_color="@color/colorDarkGray"
+                        app:progress_color="@color/colorGolden" />
+
+                    <TextView
+                        android:id="@+id/tvRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/rating_5"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp32"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/dp16">
+
+                <TextView
+                    android:id="@+id/tvRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:lineSpacingExtra="-10dp"
+                    android:maxLines="2"
+                    android:text="@string/tap_to_rate"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerviewRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvRatingAttributeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_regular"
+                        android:lineSpacingExtra="-10dp"
+                        android:maxLines="2"
+                        android:text="@string/detailed_review_optional"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/etAbout"
+                        style="@style/RegistrationInputLayoutOptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp120"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:background="@drawable/bordered_item_rounded_more_transparent"
+                        android:digits="@string/simple_digits"
+                        android:gravity="start"
+                        android:hint="@string/what_others_shopper"
+                        android:imeOptions="actionNext"
+                        android:inputType="textMultiLine"
+                        android:maxLines="10"
+                        android:padding="@dimen/dp16"
+                        android:scrollbars="vertical"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/dp16"
+                        android:paddingStart="@dimen/dp16">
+
+                        <TextView
+                            android:id="@+id/tvAlreadyReviewed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/review_already"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btnSubmitReview"
+                            style="@style/CustomButton"
+                            android:layout_width="@dimen/dp128"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/submit_review"
+                            android:textSize="@dimen/sp12" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvConsumerReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@color/colorWhite"
+                android:drawableEnd="@drawable/uparrow"
+                android:padding="@dimen/dp16"
+                android:text="@string/consumer_reviews"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llReviewDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/dp16">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+                <TextView
+                    android:id="@+id/tvReadAllReviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/dp12"
+                    android:text="@string/read_all_reviews" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</layout>

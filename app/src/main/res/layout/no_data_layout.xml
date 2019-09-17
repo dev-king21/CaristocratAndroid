@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noDataText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp16"
+    android:gravity="center"
+    android:text="@string/no_data_found"
+    android:fontFamily="@font/poppins_regular"
+    android:textSize="@dimen/text_button" />
+
+
+
+

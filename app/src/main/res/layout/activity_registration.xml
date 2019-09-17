@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+                <com.ingic.caristocrat.helpers.Titlebar
+                    android:id="@+id/titlebar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent" />
+
+                <FrameLayout
+                    android:id="@+id/main_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/titlebar"
+                    android:layout_centerHorizontal="true"
+                    android:focusableInTouchMode="true" />
+
+                <FrameLayout
+                    android:id="@+id/progressBarContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone">
+
+                    <!--<ProgressBar-->
+                        <!--android:id="@+id/progressBar"-->
+                        <!--style="?android:attr/progressBarStyle"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:indeterminate="true" />-->
+                    <com.tuyenmonkey.mkloader.MKLoader
+                        android:id="@+id/progressBar"
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="@dimen/dp50"
+                        app:mk_type="LineSpinner"
+                        app:mk_color="@color/colorBlack"
+                        android:layout_gravity="center"
+                        />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+<!--
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nvMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start">
+
+                <fragment
+                    android:id="@+id/fragmentMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.ingic.kontina.fragments.MenuFragment" />
+
+            </android.support.design.widget.NavigationView>
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nvFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end">
+
+                <fragment
+                    android:id="@+id/fragmentFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.ingic.kontina.fragments.FilterFragment" />
+
+            </android.support.design.widget.NavigationView>
+-->
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cc_new_splash_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SplashSpeedometerBckground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivSpeedometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cc_new_meter" />
+
+                <!-- <com.github.anastr.speedviewlib.ImageSpeedometer
+
+                     android:id="@+id/imageSpeedometer"
+                     android:layout_width="@dimen/dp80"
+                     android:layout_height="@dimen/dp80"
+                     app:sv_speedTextColor="@android:color/transparent"
+                     app:sv_unitTextColor="@android:color/transparent"
+                     app:sv_image="@drawable/needle" />-->
+
+                <ImageView
+                    android:id="@+id/ivNeedle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:src="@drawable/needle"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvSpeedometerValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

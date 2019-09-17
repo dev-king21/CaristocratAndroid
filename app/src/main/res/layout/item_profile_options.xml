@@ -1,0 +1,15 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btnOptions"
+        style="@style/ProfileButtons"
+        android:layout_width="@dimen/dp160"
+        android:layout_height="@dimen/dp36"
+        android:layout_marginStart="@dimen/dp14"
+        android:layoutAnimation="@anim/recycler_layout_animation"
+        android:paddingEnd="@dimen/dp18"
+        android:paddingStart="@dimen/dp18"
+        android:singleLine="true"
+        android:text="@string/my_evaluations" />
+
+</layout>

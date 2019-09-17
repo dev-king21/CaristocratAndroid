@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/easyFilpView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flipDuration="500"
+        app:flipEnabled="false"
+        app:flipFrom="left"
+        android:descendantFocusability="blocksDescendants"
+        app:flipOnTouch="false"
+        app:flipType="horizontal"
+        >
+
+        <!-- Back Layout Goes Here -->
+        <include layout="@layout/back_item_luxury_market_category"/>
+
+        <!-- Front Layout Goes Here -->
+        <include layout="@layout/front_item_luxury_market_category"/>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+</layout>

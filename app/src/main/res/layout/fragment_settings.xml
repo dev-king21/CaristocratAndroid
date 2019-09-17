@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorTransparentGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp12">
+
+                <TextView
+                    android:id="@+id/tvNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/notification"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_body_2" />
+
+
+                <CheckBox
+                    android:id="@+id/cbpushNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:button="@drawable/push_notification_selector"
+                    android:checked="true"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorTransparentGray" />
+
+            <TextView
+                android:id="@+id/tvChangePassword"
+                style="@style/SettingsOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_password" />
+
+            <View
+                android:id="@+id/viewChangePwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorTransparentGray" />
+
+            <TextView
+                android:id="@+id/tvEditProfile"
+                style="@style/SettingsOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorTransparentGray" />
+
+            <TextView
+                android:id="@+id/mySubscription"
+                style="@style/SettingsOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Subscription" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorTransparentGray" />
+
+            <LinearLayout
+                android:id="@+id/llUpdateRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/SettingsOptions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/region" />
+
+                <TextView
+                    android:id="@+id/tvRegion"
+                    style="@style/SettingsOptions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="end"
+                    android:paddingEnd="@dimen/dp16"
+                    android:paddingStart="@dimen/dp0" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorTransparentGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/SettingsOptions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Version" />
+
+
+                <TextView
+                    android:id="@+id/tvVersionCode"
+                    style="@style/SettingsOptions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/dp16"
+                    android:text="1.0.0" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorTransparentGray" />
+
+            <TextView
+                android:id="@+id/tvDeleteAccount"
+                style="@style/SettingsOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_account" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorTransparentGray" />
+
+            <TextView
+                android:id="@+id/tvLogout"
+                style="@style/SettingsOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorTransparentGray" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</layout>

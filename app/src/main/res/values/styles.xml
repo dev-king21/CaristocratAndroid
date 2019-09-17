@@ -1,0 +1,321 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:popupMenuStyle">@style/AddToFavPopupMenu</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="TitlebarTitle">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/sp28</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:fontFamily">@font/ailerons_typeface</item>
+    </style>
+
+    <style name="TitlebarActionItem">
+        <item name="android:background">@null</item>
+        <item name="android:padding">@dimen/dp10</item>
+    </style>
+
+    <style name="SplashSpeedometerBckground">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/dp15</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="MainCategoryArticleBackground">
+        <item name="android:background">@color/colorArticleCountBackground</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/sp11</item>
+        <item name="android:paddingTop">@dimen/dp4</item>
+        <item name="android:paddingBottom">@dimen/dp4</item>
+        <item name="android:paddingStart">@dimen/dp8</item>
+        <item name="android:paddingEnd">@dimen/dp8</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainCategoryArticleTitle">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/sp28</item>
+        <item name="android:fontFamily">@font/ailerons_typeface</item>
+    </style>
+
+    <style name="MainCategoryArticleDescription">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_body_2</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="SubCategoryArticleTitle">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/sp28</item>
+        <item name="android:paddingStart">@dimen/dp16</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/ailerons_typeface</item>
+    </style>
+
+    <style name="SubCategoryArticleDescription">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_body_2</item>
+        <item name="android:paddingStart">@dimen/dp16</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="SubCategoryShowArticle">
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:padding">@dimen/dp16</item>
+    </style>
+
+    <style name="WalkthroughMainPagerBackground">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WalkthroughSkip">
+        <item name="android:layout_marginBottom">@dimen/dp20</item>
+        <item name="android:layout_marginTop">@dimen/dp10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp10</item>
+        <item name="android:text">@string/skip</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_button</item>
+
+    </style>
+
+    <style name="WalkthroughEndBackground">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dp10</item>
+        <item name="android:padding">@dimen/dp15</item>
+    </style>
+
+    <style name="WalkthroughEndSkip">
+        <item name="android:gravity">end</item>
+        <item name="android:text">@string/skip</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/text_body_2</item>
+    </style>
+
+    <style name="WalkthroughEndHeading">
+        <item name="android:layout_marginTop">@dimen/dp5</item>
+        <item name="android:paddingTop">@dimen/dp10</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/sp20</item>
+    </style>
+
+    <style name="CustomButton" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="CustomButtonWhite" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button_white</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ArticleSubDetails">
+        <item name="android:drawablePadding">@dimen/dp4</item>
+        <item name="android:textSize">@dimen/sp10</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/dp12</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="MainDetailArticleTitle">
+        <item name="android:paddingBottom">@dimen/dp0</item>
+        <item name="android:paddingEnd">@dimen/dp8</item>
+        <item name="android:paddingStart">@dimen/dp8</item>
+        <item name="android:paddingTop">@dimen/dp8</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/text_subtitle_1</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainDetailArticleSubDetail">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingEnd">@dimen/dp12</item>
+        <item name="android:paddingStart">@dimen/dp12</item>
+
+    </style>
+
+    <style name="MainDetailArticleSubDetailOptions">
+        <item name="android:drawablePadding">@dimen/dp4</item>
+        <item name="android:paddingBottom">@dimen/dp4</item>
+        <item name="android:paddingTop">@dimen/dp4</item>
+        <item name="android:textSize">@dimen/sp10</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="MainDetailArticleScrollableContent">
+        <item name="android:paddingEnd">@dimen/dp12</item>
+        <item name="android:paddingStart">@dimen/dp12</item>
+        <item name="android:paddingTop">@dimen/dp8</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="MainDetailArticleLinkLayout">
+        <item name="android:layout_margin">@dimen/dp12</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MainDetailArticleLinkSubLayout">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">@dimen/dp10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MainnDetailArticleLink">
+        <item name="android:paddingBottom">@dimen/dp6</item>
+        <item name="android:paddingTop">@dimen/dp6</item>
+        <item name="android:textSize">@dimen/text_body_2</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="MainDetailArticleCommentsLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp50</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginBottom">@dimen/dp2</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="DetailsCollapsingToolbar">
+        <item name="android:background">@color/colorBlack</item>
+    </style>
+
+    <style name="CommentsHeading">
+        <item name="android:layout_marginBottom">@dimen/dp10</item>
+        <item name="android:layout_marginStart">@dimen/dp10</item>
+        <item name="android:layout_marginTop">@dimen/dp20</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="CommentsBottomLayout">
+        <item name="android:layout_margin">@dimen/dp12</item>
+        <item name="android:background">@drawable/rounded_gray_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/dp8</item>
+    </style>
+
+    <style name="CommentEditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/dp50</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">@dimen/dp10</item>
+        <item name="android:textSize">@dimen/text_subtitle_2</item>
+    </style>
+
+    <style name="CloseButton">
+        <item name="android:background">@color/colorBlack</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_button</item>
+    </style>
+
+    <style name="RegistrationInputLayoutOptions">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawablePadding">@dimen/dp16</item>
+        <item name="android:paddingBottom">@dimen/dp6</item>
+        <item name="android:paddingTop">@dimen/dp16</item>
+        <item name="android:textColor">@color/colorInputText</item>
+        <item name="android:textColorHint">@color/colorInputText</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/text_body_2</item>
+    </style>
+
+    <style name="SettingsOptions">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/text_body_2</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:padding">@dimen/dp12</item>
+    </style>
+
+    <style name="AddToFavPopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@null</item>
+        <item name="android:itemBackground">@drawable/shape</item>
+    </style>
+
+    <style name="FilePickeTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorBlack</item>
+    </style>
+
+    <style name="ProfileButtons">
+        <item name="android:paddingStart">@dimen/dp14</item>
+        <item name="android:paddingEnd">@dimen/dp14</item>
+        <item name="android:paddingTop">@dimen/dp4</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:paddingBottom">@dimen/dp4</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="LuxuryMarketHeaderStyle">
+        <item name="android:text">@string/welcome_to_luxury_market</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/sp18</item>
+        <item name="android:layout_marginTop">@dimen/dp10</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="MyDialogFragmentStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/sp12</item>
+    </style>
+
+    <style name="MyRatingBar" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">@color/colorDivider</item>
+        <item name="colorControlActivated">@color/colorGolden</item>
+    </style>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp210"
+        android:background="@drawable/bordered_item_rounded_filtered_brands"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp100"
+            android:padding="@dimen/dp8">
+
+            <ImageView
+                android:id="@+id/ivCarImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/ivNoCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cars" />
+
+            <ImageButton
+                android:id="@+id/ibRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:padding="@dimen/dp8"
+                android:src="@drawable/cross" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:background="@color/colorBordered" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp8">
+
+            <TextView
+                android:id="@+id/tvSelectBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/downarrow2"
+                android:drawablePadding="@dimen/dp12"
+                android:hint="@string/select_brand"
+                android:padding="@dimen/dp2"
+                android:textSize="@dimen/sp13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorBordered" />
+
+            <TextView
+                android:id="@+id/tvSelectModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/downarrow2"
+                android:drawablePadding="@dimen/dp12"
+                android:hint="@string/select_model"
+                android:padding="@dimen/dp2"
+                android:textSize="@dimen/sp13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorBordered" />
+
+            <TextView
+                android:id="@+id/tvSelectYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/downarrow2"
+                android:drawablePadding="@dimen/dp12"
+                android:hint="@string/select_year"
+                android:padding="@dimen/dp2"
+                android:textSize="@dimen/sp13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorBordered" />
+
+            <TextView
+                android:id="@+id/tvSelectVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/downarrow2"
+                android:drawablePadding="@dimen/dp12"
+                android:hint="@string/select_version"
+                android:padding="@dimen/dp2"
+                android:textSize="@dimen/sp13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/colorBordered" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

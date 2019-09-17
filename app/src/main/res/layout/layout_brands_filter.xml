@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/llBrandsLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordered_item_rounded_filtered_brands">
+
+        <ImageView
+            android:id="@+id/ivBrandLogo"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp16"
+            android:layout_centerVertical="true"
+            android:src="@drawable/image_placeholder"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/sp14" />
+
+    </RelativeLayout>
+
+</layout>

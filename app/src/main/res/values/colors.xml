@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteSmoke">#F5F5F5</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorArticleCountBackground">#E74C3C</color>
+    <color name="colorTransparentGray">#dadada</color>
+    <color name="colorLink">#0070D2</color>
+
+
+    <color name="colorTransparent">@android:color/transparent</color>
+
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorBordered">#D9D9D9</color>
+
+    <color name="colorError">#D1212D</color>
+    <color name="colorInputText">#787878</color>
+    <color name="colorGolden">#D5A965</color>
+    <color name="colorDarkGray">#464646</color>
+    <color name="colorLightGray">#F8F8F8</color>
+
+    <color name="colorFilterRangeLine">#8D8D8D</color>
+    <color name="colorFilterModelsBackground">#EDEDED</color>
+    <color name="colorNewAddedCarBackground">#FFF9C4</color>
+
+    <color name="profileBackground">#EBEBEB</color>
+    <color name="colorLightWhite">#F7F7F7</color>
+    <color name="colorSpecsHighlight">#D8E4BC</color>
+    <color name="colorSplash">#4d4135</color>
+</resources>

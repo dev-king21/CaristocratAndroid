@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp2"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text_body_1"
+        android:textStyle="bold"
+        tools:text="Item test text" />
+
+    <TextView
+        android:id="@+id/form_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp2"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text_body_2"
+        tools:text="Item test text" />
+
+    <TextView
+        android:id="@+id/todate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp2"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text_body_2"
+        tools:text="Item test text" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EFEFF4"/>
+</LinearLayout>

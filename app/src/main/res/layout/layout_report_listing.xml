@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:background="@drawable/dialog_round_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/report_this_listing"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp20" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+            <RadioButton
+                android:id="@+id/rbSpam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp13"
+                android:padding="@dimen/dp8"
+                android:textColor="@color/colorBlack"
+                android:button="@drawable/select_country_selector"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/spam"/>
+            <RadioButton
+                android:id="@+id/rbFakeDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp13"
+                android:padding="@dimen/dp8"
+                android:textColor="@color/colorBlack"
+                android:button="@drawable/select_country_selector"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/fake_details"/>
+            <RadioButton
+                android:id="@+id/rbOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp13"
+                android:padding="@dimen/dp8"
+                android:textColor="@color/colorBlack"
+                android:button="@drawable/select_country_selector"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/other"/>
+            <EditText
+                android:id="@+id/etOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter"
+                android:fontFamily="@font/poppins_regular"
+                android:visibility="gone"
+                android:maxLines="3"
+                android:padding="@dimen/dp10"
+                android:background="@drawable/bordered_item_rounded_filtered_brands"
+                android:textSize="@dimen/sp13"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_margin="@dimen/dp10"
+            android:text="@string/submit"
+            android:fontFamily="@font/poppins_regular"
+            style="@style/CustomButton"/>
+    </LinearLayout>
+
+</layout>

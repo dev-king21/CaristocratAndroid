@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/WalkthroughEndBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSkip"
+                    style="@style/WalkthroughEndSkip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp200"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp16"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp30"
+                    app:cardCornerRadius="@dimen/dp16">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_drawable_bg"
+                        android:padding="@dimen/dp1">
+
+                        <VideoView
+                            android:id="@+id/videoPlayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:visibility="gone" />
+
+                        <ProgressBar
+                            android:id="@+id/progressbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivThumbnail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/image2" />
+
+                        <ImageView
+                            android:id="@+id/ivPlay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/play_icon" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    style="@style/WalkthroughEndHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:fontFamily="@font/ailerons_typeface"
+                     />
+                <!--android:text="@string/stay_ahead_of_the"-->
+                <TextView
+                    android:id="@+id/tvWalkthroughEndTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp8"
+                    android:fontFamily="@font/ailerons_typeface"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp24" />
+                <!--android:text="@string/competition_always"-->
+                <TextView
+                    android:id="@+id/tvWalkthroughEndDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:lineSpacingExtra="@dimen/dp3"
+                    android:maxLines="5"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_body_2" />
+<!--
+                android:text="@string/walkthrough_end_detail"
+-->
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                style="@style/CustomButton"
+                android:layout_marginStart="@dimen/dp26"
+                android:layout_marginEnd="@dimen/dp26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp30"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/already_a_member"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_body_2" />
+
+                <TextView
+                    android:id="@+id/tvClickHere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/click_here"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_body_2"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

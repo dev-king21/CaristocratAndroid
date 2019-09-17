@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/llSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp16"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAlphabet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDivider"
+            android:paddingBottom="@dimen/dp4"
+            android:paddingEnd="@dimen/dp16"
+            android:paddingStart="@dimen/dp16"
+            android:paddingTop="@dimen/dp4"
+            android:text="A" />
+
+        <!--<com.ingic.caristocrat.helpers.ExpandableHeightGridView-->
+            <!--android:id="@+id/gridView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/dp12"-->
+            <!--android:horizontalSpacing="@dimen/dp4"-->
+            <!--android:verticalSpacing="@dimen/dp4" />-->
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ingic.caristocrat.helpers.Titlebar
+            android:id="@+id/titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/progressBarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnFilterAction"
+            android:layout_below="@+id/titlebar"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <com.tuyenmonkey.mkloader.MKLoader
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:layout_gravity="center"
+                app:mk_color="@color/colorBlack"
+                app:mk_type="LineSpinner" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnFilterAction"
+            android:layout_below="@+id/titlebar">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp16" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <com.gjiazhe.wavesidebar.WaveSideBar
+                android:id="@+id/sideBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/dp0"
+                android:paddingEnd="@dimen/dp8"
+                android:visibility="gone"
+                app:sidebar_lazy_respond="false"
+                app:sidebar_max_offset="@dimen/dp4"
+                app:sidebar_position="right"
+                app:sidebar_text_alignment="center" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnFilterAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBlack"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/close"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</layout>

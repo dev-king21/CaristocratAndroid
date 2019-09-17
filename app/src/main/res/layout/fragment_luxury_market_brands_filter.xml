@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dp40"
+            android:nestedScrollingEnabled="true"
+            android:layout_marginBottom="?attr/actionBarSize"/>
+        <com.gjiazhe.wavesidebar.WaveSideBar
+            android:id="@+id/sideBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="8dp"
+            app:sidebar_position="right"
+            app:sidebar_lazy_respond="false"
+            app:sidebar_text_size="14sp"
+            app:sidebar_max_offset="@dimen/dp10"
+            app:sidebar_text_color="@color/colorDivider"
+            app:sidebar_text_alignment="center"/>
+        <TextView
+            android:id="@+id/tvNoBrandMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_brands_show"
+            android:visibility="gone" />
+
+        <!--<in.myinnos.alphabetsindexfastscrollrecycler.IndexFastScrollRecyclerView-->
+            <!--android:id="@+id/recyclerView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="?attr/actionBarSize"-->
+            <!--android:nestedScrollingEnabled="false"-->
+            <!--android:paddingEnd="@dimen/dp32"-->
+            <!--android:paddingStart="@dimen/dp0" />-->
+
+    </FrameLayout>
+
+
+</layout>

@@ -1,0 +1,87 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rlSubCategoryDetailsNewsItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:id="@+id/llMainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/dp1"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp8">
+
+                <ImageView
+                    android:id="@+id/ivTradeIn"
+                    android:layout_width="@dimen/dp90"
+                    android:layout_height="@dimen/dp75"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_placeholder" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTradeIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="2"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/sp15" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvModel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_regular"
+                            android:singleLine="true"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tvChasis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp15"
+                            android:fontFamily="@font/poppins_regular"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_below="@+id/llMainLayout"
+            android:layout_marginBottom="@dimen/dp8"
+            android:background="@color/colorTransparentGray" />
+
+    </RelativeLayout>
+</layout>

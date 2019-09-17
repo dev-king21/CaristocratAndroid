@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/llSubLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp48"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rlSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp300">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/image_placeholder" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.4"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/shadow" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:alpha="0.4"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/shadow1" />
+
+                        <me.relex.circleindicator.CircleIndicator
+                            android:id="@+id/circlePageIndicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_alignParentBottom="true"
+                            app:ci_drawable="@drawable/slider4"
+                            app:ci_drawable_unselected="@drawable/slider3"
+                            app:ci_height="@dimen/dp4"
+                            app:ci_margin="@dimen/dp2"
+                            app:ci_width="@dimen/dp4" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_marginTop="@dimen/dp24"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="start">
+
+                                <ImageButton
+                                    android:id="@+id/ibBackbtn"
+                                    style="@style/TitlebarActionItem"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/backbtn_white" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="end">
+
+                                <com.like.LikeButton
+                                    android:id="@+id/ibLikeWhite"
+                                    style="@style/TitlebarActionItem"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:anim_scale_factor="2"
+                                    app:icon_size="@dimen/dp24"
+                                    app:icon_type="heart"
+                                    app:is_enabled="true"
+                                    app:like_drawable="@drawable/heart_remove_from_favorites"
+                                    app:liked="false"
+                                    app:unlike_drawable="@drawable/heart_add_to_favorites" />
+
+                                <ImageButton
+                                    android:id="@+id/ibShare"
+                                    style="@style/TitlebarActionItem"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/share" />
+
+                                <ImageButton
+                                    android:id="@+id/ibAddFav"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="@dimen/dp4"
+                                    android:background="@null"
+                                    android:paddingBottom="@dimen/dp0.5"
+                                    android:paddingEnd="@dimen/dp12"
+                                    android:paddingStart="@dimen/dp10"
+                                    android:paddingTop="@dimen/dp10"
+                                    android:src="@drawable/add_fav" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView
+                        android:id="@+id/youtubePlayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp200"
+                        android:visibility="gone" />
+
+                    <WebView
+                        android:id="@+id/webViewYouTubePlayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp240"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvArticleTitle"
+                        style="@style/MainDetailArticleTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/why_you_really_want_that_ferrari" />
+
+                    <LinearLayout
+                        android:id="@+id/llArticleSubDetails"
+                        style="@style/MainDetailArticleSubDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvDate"
+                            style="@style/MainDetailArticleSubDetailOptions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/date"
+                            android:text="@string/dummy_date" />
+
+                        <TextView
+                            android:id="@+id/tvViews"
+                            style="@style/MainDetailArticleSubDetailOptions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp6"
+                            android:drawableStart="@drawable/views"
+                            android:text="@string/_487_views" />
+
+                        <TextView
+                            android:id="@+id/tvLikes"
+                            style="@style/MainDetailArticleSubDetailOptions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp6"
+                            android:drawableStart="@drawable/likes"
+                            android:text="@string/_37_likes" />
+
+                        <TextView
+                            android:id="@+id/tvComments"
+                            style="@style/MainDetailArticleSubDetailOptions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp6"
+                            android:drawableStart="@drawable/comments"
+                            android:text="@string/_174_comments" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_marginBottom="@dimen/dp8"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:background="@color/colorTransparentGray" />
+
+                    <TextView
+                        android:id="@+id/tvArticle"
+                        style="@style/MainDetailArticleScrollableContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sample_text"
+                        android:visibility="gone" />
+
+                    <WebView
+                        android:id="@+id/webviewArticle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnSubscribe"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="@dimen/dp16"
+                        android:paddingRight="@dimen/dp16"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:layout_marginBottom="@dimen/dp16"
+                        android:layout_height="40dp"
+                        android:text="@string/subscribe_to_view"
+                        android:background="@drawable/rounded_pdf_button"
+                        android:textSize="@dimen/text_button"
+                        android:visibility="gone"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:drawableStart="@drawable/pdf_image_resize"/>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llArticleLink"
+                        style="@style/MainDetailArticleLinkLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivNewsChannelLogo"
+                            android:layout_width="@dimen/dp80"
+                            android:layout_height="@dimen/dp80"
+                            android:scaleType="centerCrop" />
+
+                        <LinearLayout
+                            style="@style/MainDetailArticleLinkSubLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="For More Information Visit"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_body_1" />
+
+                            <TextView
+                                android:id="@+id/tvNewsArlicleLink"
+                                style="@style/MainnDetailArticleLink"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/poppins_regular"
+                                android:singleLine="true"
+                                android:text="https://www.bbc.com"
+                                android:textColor="@color/colorLink" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRelatedCar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:orientation="vertical"
+                        android:paddingEnd="@dimen/dp16"
+                        android:paddingStart="@dimen/dp16"
+                        android:paddingTop="@dimen/dp8"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/related_cars"
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvRelatedCar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layoutAnimation="@anim/recycler_layout_animation"
+                                android:nestedScrollingEnabled="false" />
+
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSimilarListing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:orientation="vertical"
+                        android:paddingEnd="@dimen/dp16"
+                        android:paddingStart="@dimen/dp16"
+                        android:paddingTop="@dimen/dp8">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/similar_listings"
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvSimilarListings"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layoutAnimation="@anim/recycler_layout_animation"
+                                android:nestedScrollingEnabled="false" />
+
+                            <LinearLayout
+                                android:id="@+id/noDataLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <include layout="@layout/no_data_layout" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCommentsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp0.5"
+                        android:background="@color/colorTransparentGray" />
+
+                    <TextView
+                        android:id="@+id/tvWriteComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:maxLines="5"
+                        android:padding="@dimen/dp12"
+                        android:text="@string/write_a_comment"
+                        android:textSize="@dimen/text_body_2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</layout>

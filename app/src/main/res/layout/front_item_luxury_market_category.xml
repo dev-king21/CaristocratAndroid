@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp220"
+            app:cardCornerRadius="@dimen/dp5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_drawable_bg">
+
+                <LinearLayout
+                    android:id="@+id/llLuxuryMarketItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/image_placeholder"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvLuxuryMarketItemHeader"
+                            style="@style/SubCategoryArticleTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:shadowColor="@color/colorBlack"
+                            android:textColor="@color/colorWhite"
+                            android:shadowDx="-5"
+                            android:shadowDy="-5"
+                            android:shadowRadius="1"
+                            android:text="@string/the_outlet_mall" />
+
+                        <ImageButton
+                            android:id="@+id/ibInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:background="@null"
+                            android:padding="@dimen/dp10"
+                            android:shadowColor="@color/colorBlack"
+                            android:textColor="@color/colorWhite"
+                            android:shadowDx="-5"
+                            android:shadowDy="-5"
+                            android:shadowRadius="1"
+                            android:src="@drawable/info" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvLuxuryMarketItemDesc"
+                        style="@style/SubCategoryArticleDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/the_outlet_mall_desc" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</layout>

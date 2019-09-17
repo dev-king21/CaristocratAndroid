@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rlFeaturedMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200">
+
+        <ImageView
+            android:id="@+id/ivFeaturedBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/llArticleDescriptionTitile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp16"
+            android:clickable="false"
+            android:focusable="false"
+            android:orientation="vertical"
+            android:padding="@dimen/dp8">
+
+            <TextView
+                android:id="@+id/tvFeaturedThisWeek"
+                style="@style/MainCategoryArticleBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/featured_this_week"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvArticleTitle"
+                style="@style/MainCategoryArticleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_marginEnd="@dimen/dp48"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/poppins_regular"
+                android:maxLines="2"
+                android:minLines="2"
+                android:shadowColor="@color/colorBlack"
+                android:shadowDx="-5"
+                android:shadowDy="-5"
+                android:shadowRadius="1"
+                android:text="@string/walkthrough_end_detail"
+                android:textSize="@dimen/text_subtitle_1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFeatured"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorBlack"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingStart="@dimen/dp16"
+            android:paddingTop="@dimen/dp2"
+            android:paddingEnd="@dimen/dp16"
+            android:paddingBottom="@dimen/dp2"
+            android:text="@string/featured"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp14"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginEnd="@dimen/dp14"
+            android:layout_marginBottom="@dimen/dp16"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/user_this_section_to_compare" />
+
+        <!-- <EditText
+             android:id="@+id/etSearch"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/dp14"
+             android:layout_marginTop="@dimen/dp8"
+             android:layout_marginEnd="@dimen/dp14"
+             android:background="@drawable/tab_bg"
+             android:drawableEnd="@drawable/search"
+             android:hint="@string/start_typing_car_model"
+             android:padding="@dimen/dp12"
+             android:textSize="@dimen/sp12" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp14"
+            android:layout_marginEnd="@dimen/dp14"
+            android:background="@drawable/tab_bg"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/start_typing_car_model"
+                android:digits="@string/name_digits"
+                android:imeOptions="actionSearch"
+                android:padding="@dimen/dp12"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/sp12" />
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:padding="@dimen/dp10"
+                android:src="@drawable/search"
+                />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCarList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp14"
+                android:layout_marginEnd="@dimen/dp14" />
+
+            <LinearLayout
+                android:id="@+id/noDataLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:visibility="gone">
+
+
+                <include layout="@layout/no_data_layout" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/colorDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvSelectedCarList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/dp10" />
+
+                <TextView
+                    android:id="@+id/tvNoSelectedCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/dp14"
+                    android:text="@string/add_two_or_more_cars_to_compare"
+                    android:textSize="@dimen/sp11"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnCompare"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/compare"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:padding="@dimen/dp8"
+                android:text="@string/compare"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

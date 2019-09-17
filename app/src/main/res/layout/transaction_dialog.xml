@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp20">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp20"
+                android:paddingEnd="@dimen/dp20"
+                android:text="@string/thankyou"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp18" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/colorBordered" />
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp20"
+                android:paddingEnd="@dimen/dp20"
+                android:paddingTop="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20"
+                android:textColor="@color/colorBlack"
+                android:text="You have successfully registered to this training course."
+                android:textSize="@dimen/text_body_1" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:background="@color/colorBordered" />
+        <TextView
+            android:id="@+id/tvClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/sp13"
+            android:padding="@dimen/dp16"
+            android:visibility="gone"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/colorBlack"
+            android:text="@string/close"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+</layout>

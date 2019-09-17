@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+      android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="false"
+        android:layout_width="match_parent">
+     <!--   <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvResult"
+            android:nestedScrollingEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </HorizontalScrollView>
+        </ScrollView>-->
+        <com.evrencoskun.tableview.TableView
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:row_header_width="@dimen/dp150"
+            app:column_header_height="@dimen/dp50"
+            android:clickable="false"
+            app:selected_color="@color/transparent"
+            app:shadow_color="@color/transparent"
+            app:unselected_color="@color/transparent"
+            />
+    </FrameLayout>
+</layout>

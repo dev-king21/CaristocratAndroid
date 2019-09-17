@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp70"
+            android:layout_marginTop="@dimen/dp10"
+            app:cardCornerRadius="@dimen/dp6">
+
+            <ImageView
+                android:id="@+id/ivMedia"
+                android:layout_width="@dimen/dp70"
+                android:layout_height="@dimen/dp70"
+                android:scaleType="centerCrop"
+                android:src="@drawable/camerabox" />
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/cardView"
+            android:layout_marginStart="-6dp"
+            android:layout_marginTop="-16dp"
+            android:layout_toEndOf="@id/cardView"
+            android:paddingBottom="@dimen/dp8"
+            android:paddingTop="@dimen/dp8"
+            android:src="@drawable/crosscircle"
+            android:translationZ="@dimen/dp2" />
+    </RelativeLayout>
+
+</layout>

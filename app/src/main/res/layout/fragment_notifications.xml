@@ -1,0 +1,24 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp10" />
+
+        <TextView
+            android:id="@+id/tvNoNotification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/no_notifications_show" />
+
+    </RelativeLayout>
+</layout>

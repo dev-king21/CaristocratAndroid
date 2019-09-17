@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp100"
+        android:layout_marginTop="@dimen/dp14"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="@dimen/dp14"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivCar"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/dp14"
+            android:layout_marginEnd="@dimen/dp14"
+            android:paddingTop="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dp10"
+            >
+
+            <TextView
+                android:id="@+id/tvCarName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_regular"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:text="BENTLEY"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp14" />
+            <TextView
+                android:id="@+id/tvCarPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_regular"
+                android:maxLines="1"
+                android:text="AED 95,000"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/btnSelectDeselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp10"
+            />
+    </LinearLayout>
+</layout>

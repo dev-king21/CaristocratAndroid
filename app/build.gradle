@@ -1,0 +1,179 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.application.caristocrat"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 8
+        versionName "1.0.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+
+    //Retrofit
+    implementation 'com.squareup.okhttp3:okhttp:4.0.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.0.1'
+    implementation 'com.squareup:otto:1.3.8'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
+    //Circle Indicator
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+
+    //RoundedCorner Layout
+
+    //    implementation 'com.jcminarro:RoundKornerLayouts:0.3.1'
+
+    //View Pager Transformer
+    implementation 'com.eftimoff:android-viewpager-transformers:1.0.1@aar'
+
+    //Android Animation Library
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    //Viewpager Indicator
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+
+    //Country Picker
+    implementation 'com.github.mukeshsolanki:country-picker-android:1.1.9'
+
+    //For File Picker
+    implementation 'com.droidninja:filepicker:2.1.0'
+
+    //For Image Compression
+    implementation 'id.zelory:compressor:2.1.0'
+
+    //Permission Liberary
+    implementation 'gun0912.ted:tedpermission:2.1.0'
+
+    //Image Cropper
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.3.+'
+    implementation 'com.github.bumptech.glide:glide:4.2.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
+    annotationProcessor 'com.github.bumptech.glide:annotations:4.2.0'
+
+    //Material LeanBack
+    implementation 'com.github.florent37:materialleanback:1.0.2'
+
+    //Like Button
+    implementation 'com.github.jd-alexander:LikeButton:0.2.3'
+
+    //Facebook
+    implementation 'com.facebook.android:facebook-android-sdk:4.26.0'
+
+    //Google
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+
+    //videoPlayer
+    implementation 'com.github.rtoshiro.fullscreenvideoview:fullscreenvideoview:1.1.2'
+
+    //    implementation 'com.github.anastr:speedviewlib:1.2.0'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.4@aar') {
+        transitive = true;
+    }
+    implementation 'com.github.Pygmalion69:Gauge:1.4'
+
+    //Palette
+    implementation 'com.android.support:palette-v7:27.1.1'
+
+    //Shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.3.0'
+
+    //RecyclerIndicator
+    implementation 'com.kingfisherphuoc:easy-recyclerview-indicator:1.2'
+
+    //RippleBackground
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+
+    //EasyFlipView
+    implementation 'com.wajahatkarim3.EasyFlipView:EasyFlipView:2.1.0'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+
+    //Range seekbar
+    implementation 'io.apptik.widget:multislider:1.3'
+    implementation 'com.crystal:crystalrangeseekbar:1.1.3'
+
+    //Alphabet index scroller
+    implementation 'com.github.myinnos:AlphabetIndex-Fast-Scroll-RecyclerView:1.0.92'
+
+    //Stateless Recycler Section
+    implementation 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.2.0'
+
+    //LoaderView
+    implementation 'com.tuyenmonkey:mkloader:1.4.0'
+
+    //Wave side bar animation
+    implementation 'com.gjiazhe:wavesidebar:1.3'
+
+    //Android Youtube Player
+    implementation 'com.github.PierfrancescoSoffritti:AndroidYouTubePlayer:7.0.1'
+
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+    //recyclerIndicator
+    implementation 'com.kingfisherphuoc:easy-recyclerview-indicator:1.2'
+
+    implementation 'com.github.anastr:speedviewlib:1.3.0'
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+    implementation 'com.bogdwellers:pinchtozoom:0.1'
+
+    implementation 'com.jsibbold:zoomage:1.1.0'
+
+    implementation 'com.evrencoskun.library:tableview:0.8.5.1'
+
+    implementation 'hyogeun.github.com.colorratingbar:ColorRatingBar:1.0.1'
+
+//Telr Sdk
+    implementation project(":telrlibrary")
+    implementation 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+    implementation('org.simpleframework:simple-xml:2.7.1', {
+        exclude group: 'stax', module: 'stax'
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'xpp3', module: 'xpp3'
+    })
+    //
+    implementation 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.2.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

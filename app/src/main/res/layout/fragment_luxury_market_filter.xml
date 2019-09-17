@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                android:id="@+id/llFilterContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llFilterByBrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp16">
+
+                    <com.ingic.caristocrat.helpers.RoundImageView
+                        android:layout_width="@dimen/dp36"
+                        android:layout_height="@dimen/dp36"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp1"
+                        android:src="@drawable/filterbybrand" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp16"
+                        android:layout_marginStart="@dimen/dp16"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/filter_by_brand"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/tvSelectedBrandNames"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:fontFamily="@font/poppins_regular"
+                            android:singleLine="true"
+                            android:text="@string/select_make"
+                            android:textSize="@dimen/sp12" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llFilterByRegion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp16">
+
+                    <com.ingic.caristocrat.helpers.RoundImageView
+                        android:layout_width="@dimen/dp36"
+                        android:layout_height="@dimen/dp36"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp1"
+                        android:src="@drawable/filterbybrand" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp16"
+                        android:layout_marginStart="@dimen/dp16"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/filter_by_country"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/tvRegionNames"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/select_countries"
+                            android:textSize="@dimen/sp12" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp16"
+                    android:visibility="gone">
+
+                    <com.ingic.caristocrat.helpers.RoundImageView
+                        android:layout_width="@dimen/dp36"
+                        android:layout_height="@dimen/dp36"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp1"
+                        android:src="@drawable/filterbybrand" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp16"
+                        android:layout_marginStart="@dimen/dp16"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/filter_by_version"
+                            android:textColor="@color/colorBlack" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/etVersion"
+                                style="@style/RegistrationInputLayoutOptions"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.95"
+                                android:digits="@string/simple_digits"
+                                android:hint="@string/write_version_name"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLength="32"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/dp2"
+                                android:paddingEnd="0dp"
+                                android:paddingStart="0dp"
+                                android:paddingTop="@dimen/dp2"
+                                android:singleLine="true"
+                                android:textSize="@dimen/sp12" />
+
+                            <ImageView
+                                android:id="@+id/ivRemoveVersionName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/crosscircle"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/bg_gray"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/llTransmission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp16">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp8"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="1"
+                        android:text="@string/dealer_type"
+                        android:textColor="@color/colorBlack" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="@dimen/dp4">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupTransmission"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp36"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/rbAutomatic"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/checkbox_selector"
+                                android:button="@null"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:text="@string/official_dealer"
+                                android:textColor="@drawable/button_selector_text"
+                                android:textSize="@dimen/sp12" />
+
+                            <CheckBox
+                                android:id="@+id/rbManual"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/checkbox_selector"
+                                android:button="@null"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:text="@string/market_dealer"
+                                android:textColor="@drawable/button_selector_text"
+                                android:textSize="@dimen/sp12" />
+
+                        </RadioGroup>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp16">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvPriceRangeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/price"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/tvPriceRangeLabelMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:layout_toStartOf="@+id/tvPriceRangeLabelSeparator"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/currency_unit"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tvPriceRangeLabelSeparator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:layout_toStartOf="@+id/tvPriceRangeLabelMax"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/separator_text"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tvPriceRangeLabelMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/currency_unit_t"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp12" />
+
+                    </RelativeLayout>
+
+                    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                        android:id="@+id/rangeSeekbarPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:bar_highlight_color="@color/colorFilterRangeLine"
+                        app:left_thumb_image="@drawable/filtercircle"
+                        app:max_value="5000001"
+                        app:min_value="0"
+                        app:right_thumb_image="@drawable/filtercircle"
+                        app:steps="10000" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llModelYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp16">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvModelYearRangeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/model_year"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/tvModelYearLabelMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:layout_toStartOf="@+id/tvModelYearLabelSeparator"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/year_1901"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tvModelYearLabelSeparator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:layout_toStartOf="@+id/tvModelYearLabelMax"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/separator_text"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tvModelYearLabelMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/year_2000"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp12" />
+
+                    </RelativeLayout>
+
+                    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                        android:id="@+id/rangeSeekbarModelYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:bar_highlight_color="@color/colorFilterRangeLine"
+                        app:left_thumb_image="@drawable/filtercircle"
+                        app:right_thumb_image="@drawable/filtercircle"
+                        app:steps="1" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp16"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvClassicRangeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/classic"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/tvClassicRangeLabelMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/classic"
+                            android:textColor="@color/colorBlack" />
+
+                    </RelativeLayout>
+
+                    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                        android:id="@+id/rangeSeekbarYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:bar_highlight_color="@color/colorFilterRangeLine"
+                        app:left_thumb_image="@drawable/filtercircle"
+                        app:right_thumb_image="@drawable/filtercircle"
+                        app:steps="1" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llMileage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp16"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvMileageRangeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/mileage"
+                            android:textColor="@color/colorBlack" />
+
+                        <TextView
+                            android:id="@+id/tvMileageRangeLabelMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:layout_toStartOf="@+id/tvMileageRangeLabelSeparator"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/mileage_unit"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tvMileageRangeLabelSeparator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:layout_toStartOf="@+id/tvMileageRangeLabelMax"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/separator_text"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tvMileageRangeLabelMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="@dimen/dp8"
+                            android:fontFamily="@font/poppins_regular"
+                            android:maxLines="1"
+                            android:text="@string/mileage_unit_t"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp12" />
+
+                    </RelativeLayout>
+
+                    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                        android:id="@+id/rangeSeekbarMileage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:bar_highlight_color="@color/colorFilterRangeLine"
+                        app:left_thumb_image="@drawable/filtercircle"
+                        app:right_thumb_image="@drawable/filtercircle"
+                        app:steps="10" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp16"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp16"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="1"
+                        android:text="@string/minimum_rating"
+                        android:textColor="@color/colorBlack" />
+
+                    <android.support.v7.widget.AppCompatRatingBar
+                        android:id="@+id/ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp32"
+                        android:numStars="5"
+                        android:progressDrawable="@drawable/large_rating_indicator"
+                        android:stepSize="1" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:id="@+id/ll_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp16">
+
+                    <TextView
+                        android:id="@+id/tvBodyStyleLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp16"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="1"
+                        android:text="@string/segment"
+                        android:textColor="@color/colorBlack" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</layout>

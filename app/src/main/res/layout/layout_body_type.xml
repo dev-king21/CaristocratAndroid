@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llCarBodyType"
+            android:layout_width="@dimen/dp64"
+            android:layout_height="@dimen/dp64"
+            android:layout_gravity="center_horizontal"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/ivCarTypeIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/body_style_unselected" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCarTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp4"
+            android:fontFamily="@font/poppins_regular"
+            android:minLines="2"
+            android:text="@string/classic"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp12" />
+
+    </LinearLayout>
+
+</layout>

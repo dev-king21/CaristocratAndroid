@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "715532030018",
+    "firebase_url": "https://caristocrat-9a268.firebaseio.com",
+    "project_id": "caristocrat-9a268",
+    "storage_bucket": "caristocrat-9a268.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715532030018:android:d1b7861daf72a160",
+        "android_client_info": {
+          "package_name": "com.application.caristocrat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715532030018-fmspto290k0p3lvn7hm59mtg2mekpt4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.application.caristocrat",
+            "certificate_hash": "ad199d7974ee7ec4d450746ffd4124f727f594cf"
+          }
+        },
+        {
+          "client_id": "715532030018-r9ck6tnpm03rtnh72lkro0469jke6of0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuvqtq7MJwPiS7EIRUqbGVsmxpXUzC29s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715532030018-r9ck6tnpm03rtnh72lkro0469jke6of0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "715532030018-79gre6bpflqvgbkognkqheripmnbtkdu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.teamingic.caristocrat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715532030018:android:ecb6bb3a10a4cae6",
+        "android_client_info": {
+          "package_name": "com.ingic.caristocrat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715532030018-8hj7lm34psjgnvij87oopoi76a4lc0nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ingic.caristocrat",
+            "certificate_hash": "c22d5336799161ed9d7600fdc98ed10af8f9c706"
+          }
+        },
+        {
+          "client_id": "715532030018-ibcg70ukt65ou9f6q5nci13e31n832ak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ingic.caristocrat",
+            "certificate_hash": "ad199d7974ee7ec4d450746ffd4124f727f594cf"
+          }
+        },
+        {
+          "client_id": "715532030018-r9ck6tnpm03rtnh72lkro0469jke6of0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuvqtq7MJwPiS7EIRUqbGVsmxpXUzC29s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715532030018-r9ck6tnpm03rtnh72lkro0469jke6of0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "715532030018-79gre6bpflqvgbkognkqheripmnbtkdu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.teamingic.caristocrat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

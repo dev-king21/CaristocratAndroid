@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="@dimen/dp0"
+        app:behavior_skipCollapsed="true"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <LinearLayout
+            android:id="@+id/lllCommentsListing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCommentsHeading"
+                style="@style/CommentsHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comments" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp250">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ListView
+                        android:id="@+id/lvComments"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/colorDivider"
+                        android:scrollbars="none" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayoutProgressbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <com.tuyenmonkey.mkloader.MKLoader
+                        android:id="@+id/progressBar"
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_gravity="center"
+                        app:mk_color="@color/colorBlack"
+                        app:mk_type="LineSpinner" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvNoComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="@string/no_comments_to_show"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llinputComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:background="@color/colorTransparentGray" />
+
+                <LinearLayout
+                    style="@style/CommentsBottomLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50">
+
+                    <EditText
+                        android:id="@+id/etComment"
+                        style="@style/CommentEditText"
+                        android:digits="@string/simple_digits"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/write_a_comment" />
+
+                    <ImageButton
+                        android:id="@+id/ibSend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/comment" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvClose"
+                    style="@style/CloseButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/close" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

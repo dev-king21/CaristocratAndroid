@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSegmentedCarSubCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginStart="@dimen/dp14"
+        android:layout_marginEnd="@dimen/dp14"/>
+    <LinearLayout
+        android:id="@+id/noDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <include layout="@layout/no_data_layout" />
+    </LinearLayout>
+</FrameLayout>
+</layout>

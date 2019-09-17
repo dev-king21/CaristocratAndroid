@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="@dimen/dp180"
+    android:layout_height="@dimen/dp140"
+    android:background="@color/colorLightWhite">
+
+    <TextView
+        android:id="@+id/tvCell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp1"
+        android:layout_marginStart="@dimen/dp1"
+        android:layout_centerInParent="true"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:padding="@dimen/dp20"
+        android:singleLine="true"
+        android:text="-" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp1"
+        android:background="@color/colorBordered" />
+
+    <View
+        android:layout_width="@dimen/dp1"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorBordered" />
+
+</RelativeLayout>

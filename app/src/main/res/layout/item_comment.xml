@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llCommentsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp12">
+
+            <com.ingic.caristocrat.helpers.RoundImageView
+                android:id="@+id/ivCommenter"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:src="@drawable/avatar_place_holder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp16"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp4">
+
+                    <TextView
+                        android:id="@+id/tvCommenterName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:text="Karen Hume"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_body_1" />
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="end"
+                        android:text="20 min" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/walkthrough_desc"
+                    android:textSize="@dimen/text_body_2" />
+
+                <LinearLayout
+                    android:id="@+id/llCommentOptions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvEditComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/edit"
+                        android:textColor="@color/colorLink"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp8"
+                        android:layout_marginStart="@dimen/dp8"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/tvDeleteComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/delete"
+                        android:textColor="@color/colorLink"
+                        android:textSize="@dimen/sp14" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_below="@id/llCommentsLayout"
+            android:background="@color/colorTransparentGray" />
+    </RelativeLayout>
+</layout>

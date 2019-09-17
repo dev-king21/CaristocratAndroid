@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSkipTop" />
+
+        <TextView
+            android:id="@+id/tvSkipTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingStart="@dimen/dp16"
+            android:paddingTop="@dimen/dp16"
+            android:paddingEnd="@dimen/dp16"
+            android:text="@string/skip"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp16"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dp16"
+            android:paddingEnd="@dimen/dp16">
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                app:ci_drawable="@drawable/slider"
+                app:ci_drawable_unselected="@drawable/slider2"
+                app:ci_height="@dimen/dp8"
+                app:ci_width="@dimen/dp8" />
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/CustomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tvSkipBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/dp16"
+                android:text="@string/skip"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp14" />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                style="@style/CustomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llAlreadyMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp30"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/already_a_member"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_body_2" />
+
+                <TextView
+                    android:id="@+id/tvClickHere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/click_here"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_body_2"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/progressBarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:fitsSystemWindows="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/dp16">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:shimmer_base_alpha="0.4">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp220"
+                        app:cardBackgroundColor="@color/colorWhiteSmoke"
+                        app:cardCornerRadius="@dimen/dp16" />
+
+                    <View
+                        android:layout_width="@dimen/dp120"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_above="@id/vL1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:layout_marginBottom="@dimen/dp16"
+                        android:background="@color/colorWhiteSmoke" />
+
+                    <View
+                        android:id="@+id/vL1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp12"
+                        android:layout_above="@id/vL2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/dp8"
+                        android:background="@color/colorWhiteSmoke" />
+
+                    <View
+                        android:id="@+id/vL2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp12"
+                        android:layout_above="@id/vL3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/dp8"
+                        android:background="@color/colorWhiteSmoke" />
+
+                    <View
+                        android:id="@+id/vL3"
+                        android:layout_width="@dimen/dp240"
+                        android:layout_height="@dimen/dp12"
+                        android:layout_above="@+id/vButton"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/dp16"
+                        android:background="@color/colorWhiteSmoke" />
+
+                    <View
+                        android:id="@+id/vButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp48"
+                        android:layout_above="@id/vSkip"
+                        android:layout_marginTop="@dimen/dp36"
+                        android:layout_marginBottom="@dimen/dp16"
+                        android:background="@color/colorWhiteSmoke" />
+
+                    <View
+                        android:id="@+id/vSkip"
+                        android:layout_width="@dimen/dp240"
+                        android:layout_height="@dimen/dp18"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/dp16"
+                        android:background="@color/colorWhiteSmoke" />
+
+                </RelativeLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</layout>

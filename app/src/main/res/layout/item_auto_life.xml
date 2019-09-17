@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rlAutoLifeCategories"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp210">
+
+        <ImageView
+            android:id="@+id/ivSubCategoryItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_placeholder" />
+
+        <ImageView
+            android:id="@+id/ivShowDetail"
+            style="@style/SubCategoryShowArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNewArticlesCount"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/tvSubcategoryTitle"
+            style="@style/SubCategoryArticleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivShowDetail"
+            android:shadowColor="@color/colorBlack"
+            android:textColor="@color/colorWhite"
+            android:shadowDx="-5"
+            android:shadowDy="-5"
+            android:shadowRadius="1"
+            android:text="@string/news" />
+
+        <TextView
+            android:id="@+id/tvSubcategoryDescription"
+            style="@style/SubCategoryArticleDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubcategoryTitle"
+            android:text="@string/news_category_desc" />
+
+        <TextView
+            android:id="@+id/tvNewArticlesCount"
+            style="@style/MainCategoryArticleBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/app_name"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:padding="@dimen/dp16" />
+
+        <com.ingic.caristocrat.helpers.CustomTextInputLayout
+            android:id="@+id/ilAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16">
+
+            <EditText
+                android:id="@+id/etAbout"
+                style="@style/RegistrationInputLayoutOptions"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp120"
+                android:layout_margin="@dimen/dp8"
+                android:background="@drawable/bordered_item_rounded_more_transparent"
+                android:gravity="start"
+                android:hint="@string/add_detailed_review"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:padding="@dimen/dp16"
+                android:scrollbars="vertical"
+                android:textStyle="italic" />
+
+        </com.ingic.caristocrat.helpers.CustomTextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp16"
+            android:paddingStart="@dimen/dp16"
+            android:paddingEnd="@dimen/dp16"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/CustomButtonWhite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="@dimen/dp8"
+                android:layout_weight="0.5"
+                android:text="@string/cancel"
+                android:textSize="@dimen/sp12" />
+
+            <Button
+                android:id="@+id/btnSubmitReview"
+                style="@style/CustomButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/dp8"
+                android:layout_weight="0.5"
+                android:text="@string/submit_review"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

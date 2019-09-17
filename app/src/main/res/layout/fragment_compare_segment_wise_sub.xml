@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tvImage"
+            android:layout_width="@dimen/dp240"
+            android:layout_height="@dimen/dp120"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_marginEnd="@dimen/dp14"
+            android:layout_marginStart="@dimen/dp14"
+            android:layout_marginTop="@dimen/dp16"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/professional_comparison_of_vehicles_from_the_same_segments" />
+
+        <ExpandableListView
+            android:id="@+id/expandedMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:childDivider="@color/colorWhite"
+            android:divider="@color/bg_gray"
+            android:dividerHeight="@dimen/dp8"
+            android:groupIndicator="@null"
+            android:nestedScrollingEnabled="true"
+            android:paddingTop="@dimen/dp16" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSegmentedCar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp14"
+                android:layout_marginStart="@dimen/dp14" />
+
+            <LinearLayout
+                android:id="@+id/noDataLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <include layout="@layout/no_data_layout" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</layout>
