@@ -88,6 +88,7 @@ public class BrandsModelsListFragment extends DialogFragment implements View.OnC
 
         setListeners();
 
+
         getCarModels(filterBrand.getId());
 
         return binding.getRoot();
@@ -204,6 +205,7 @@ public class BrandsModelsListFragment extends DialogFragment implements View.OnC
     private void getCarModels(int brandId) {
         Map<String, Object> params = new HashMap<>();
         params.put("brand_id", brandId);
+        params.put("category_id", BrandsListFilterActivity.categoryId);
         WebApiRequest.Instance(activityContext).request(AppConstants.WebServicesKeys.MODEL, null, null, params, null, new WebApiRequest.WebServiceArrayResponse() {
             @Override
             public void onSuccess(ApiArrayResponse apiArrayResponse) {

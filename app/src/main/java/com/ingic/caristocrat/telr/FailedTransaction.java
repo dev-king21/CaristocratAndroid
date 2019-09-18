@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.ingic.caristocrat.fragments.CompareSegmentMainWiseFragment;
+import com.ingic.caristocrat.fragments.CompareSegmentSubWiseFragment;
 import com.ingic.caristocrat.fragments.MainDetailPageFragment;
 import com.telr.mobile.sdk.activty.WebviewActivity;
 import com.telr.mobile.sdk.entity.response.status.StatusResponse;
@@ -17,6 +18,7 @@ public class FailedTransaction extends AppCompatActivity {
         Intent intent = getIntent();
         Object object = intent.getParcelableExtra(WebviewActivity.PAYMENT_RESPONSE);
         CompareSegmentMainWiseFragment.payment = false;
+        CompareSegmentSubWiseFragment.payment = false;
         MainDetailPageFragment.paid = false;///doubet
         TransactionDialog transactionDialog = TransactionDialog.newInstance(FailedTransaction.this);
 

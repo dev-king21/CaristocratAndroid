@@ -138,7 +138,7 @@ public class OutletMallFragment extends BaseFragment implements View.OnClickList
                 break;
 
             case R.id.ibFilter:
-                mainActivityContext.replaceFragment(LuxuryMarketFilterFragment.Instance(categoryKey), LuxuryMarketFilterFragment.class.getSimpleName(), true, false);
+                mainActivityContext.replaceFragment(LuxuryMarketFilterFragment.Instance(categoryKey,item_id), LuxuryMarketFilterFragment.class.getSimpleName(), true, false);
                 break;
 
             case R.id.ibSort:

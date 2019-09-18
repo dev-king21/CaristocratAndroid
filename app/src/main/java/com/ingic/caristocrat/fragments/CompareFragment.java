@@ -58,7 +58,7 @@ public class CompareFragment extends BaseFragment implements View.OnClickListene
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ibFilter:
-                mainActivityContext.replaceFragment(LuxuryMarketFilterFragment.Instance(AppConstants.MainCategoriesType.LUXURY_NEW_CARS), LuxuryMarketFilterFragment.class.getSimpleName(), true, false);
+                mainActivityContext.replaceFragment(LuxuryMarketFilterFragment.Instance(AppConstants.MainCategoriesType.LUXURY_NEW_CARS,0), LuxuryMarketFilterFragment.class.getSimpleName(), true, false);
                 break;
         }
     }

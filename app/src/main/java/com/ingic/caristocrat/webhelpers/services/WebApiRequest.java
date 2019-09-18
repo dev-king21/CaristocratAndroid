@@ -374,7 +374,6 @@ public class WebApiRequest {
                     if (!onResponseHandler(response, null)) {
                         if (response.errorBody() != null) {
                             //SPECIAL HANDLING FOR LOGIN KEY
-                            int code = response.code();
                             if (response.code() == AppConstants.HttpStatusCodes.UNVERIFIED_SIGNIN && WebApiMethodKey == AppConstants.WebServicesKeys.LOGIN) {
                                 ApiResponse apiResponse = new ApiResponse();
                                 apiResponse.setSuccess(false);

@@ -6,6 +6,7 @@ import android.view.View;
 import com.ingic.caristocrat.activities.BaseActivity;
 import com.ingic.caristocrat.constants.AppConstants;
 import com.ingic.caristocrat.fragments.CompareSegmentMainWiseFragment;
+import com.ingic.caristocrat.fragments.CompareSegmentSubWiseFragment;
 import com.ingic.caristocrat.fragments.MainDetailPageFragment;
 import com.ingic.caristocrat.helpers.DateFormatHelper;
 import com.ingic.caristocrat.webhelpers.models.ApiResponse;
@@ -57,7 +58,7 @@ public class SuccessTransaction extends BaseActivity {
 
 //            setTransactionDetails(status.getAuth().getTranref(), status.getAuth().getCardlast4());
 
-            if (CompareSegmentMainWiseFragment.payment) {
+            if (CompareSegmentMainWiseFragment.payment || CompareSegmentSubWiseFragment.payment) {
                 ProComparisonSubs(status.getAuth().getTranref());
             } else {
                 if (oneReport)
@@ -142,6 +143,7 @@ public class SuccessTransaction extends BaseActivity {
                         if (apiResponse.isSuccess()) {
                             if (apiResponse.getData().toString().contains("user_id")) {
                                 CompareSegmentMainWiseFragment.payment = true;
+                                CompareSegmentSubWiseFragment.payment = true;
                                 transactionDialog.setVisibility(View.VISIBLE);
                             } else
                                 transactionDialog.setVisibility(View.GONE);
@@ -151,6 +153,7 @@ public class SuccessTransaction extends BaseActivity {
                     @Override
                     public void onError() {
                         CompareSegmentMainWiseFragment.payment = false;
+                        CompareSegmentSubWiseFragment.payment = false;
                     }
                 }, null);
     }

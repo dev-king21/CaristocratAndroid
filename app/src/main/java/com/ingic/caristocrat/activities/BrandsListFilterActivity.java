@@ -39,13 +39,14 @@ public class BrandsListFilterActivity extends BaseActivity implements View.OnCli
     private double itemWidth;
     private UIHelper.SpacesItemDecorationAllSideEqual spacesItemDecorationAllSideEqual;
     private int spacingInPixels;
+    public static int categoryId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(null);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_brands_list_filter);
         this.context = this;
-
+        categoryId = getIntent().getIntExtra("categoryId", 0);
         itemWidth = UIHelper.screensize(this, "x") / 2.5;
 
         filter = LuxuryMarketSearchFilter.getInstance();
@@ -99,13 +100,6 @@ public class BrandsListFilterActivity extends BaseActivity implements View.OnCli
             titlebar.setTitle(context.getResources().getString(R.string.brands));
         }
         titlebar.showBackButton(context, false).setOnClickListener(this);
-/*
-        titlebar.btnFilterAction.setVisibility(View.VISIBLE);
-        titlebar.btnFilterAction.setText(mainActivityContext.getResources().getString(R.string.close));
-        titlebar.btnFilterAction.setOnClickListener(this);
-        titlebar.llCommentsLayout.setVisibility(View.VISIBLE);
-        titlebar.nestedscroll.setNestedScrollingEnabled(false);
-*/
     }
 
     @Override

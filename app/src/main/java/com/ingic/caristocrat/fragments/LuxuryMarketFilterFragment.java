@@ -51,22 +51,24 @@ public class LuxuryMarketFilterFragment extends BaseFragment implements View.OnC
     private int year;
     Bundle savedInstanceState;
     String categoryKey;
+    int categoryId;
     LuxuryMarketSearchFilter filter;
 
     public LuxuryMarketFilterFragment() {
     }
 
     @SuppressLint("ValidFragment")
-    public LuxuryMarketFilterFragment(String categoryKey) {
+    public LuxuryMarketFilterFragment(String categoryKey,int _categoryId) {
         this.categoryKey = categoryKey;
+        this.categoryId = _categoryId;
     }
 
     public static LuxuryMarketFilterFragment Instance() {
         return new LuxuryMarketFilterFragment();
     }
 
-    public static LuxuryMarketFilterFragment Instance(String categoryKey) {
-        return new LuxuryMarketFilterFragment(categoryKey);
+    public static LuxuryMarketFilterFragment Instance(String categoryKey, int _categoryId) {
+        return new LuxuryMarketFilterFragment(categoryKey, _categoryId);
     }
 
     @Override
@@ -502,8 +504,9 @@ public class LuxuryMarketFilterFragment extends BaseFragment implements View.OnC
     }
 
     private void filterByBrand() {
-//        mainActivityContext.replaceFragment(LuxuryMarketBrandsFilterFragment.Instance(), LuxuryMarketBrandsFilterFragment.class.getSimpleName(), true, true);
-        mainActivityContext.startActivity(new Intent(mainActivityContext, BrandsListFilterActivity.class));
+        Intent intent = new Intent(new Intent(mainActivityContext, BrandsListFilterActivity.class));
+        intent.putExtra("categoryId",categoryId);
+     mainActivityContext.startActivity(intent);
     }
 
     private void applyFilter() {
