@@ -37,6 +37,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayer initYoutube = null;
     public static  String newsId = "";
     public static Boolean oneReport = true;
+    public static Boolean twiceAllReport = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

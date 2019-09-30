@@ -96,7 +96,8 @@ public class CompareResultFragment extends BaseFragment {
         if (tradeCars.get(0).getLimitedEditionSpecsArray().getDimensionsWeight() != null) {
             for (int j = 0; j < tradeCars.get(0).getLimitedEditionSpecsArray().getDimensionsWeight().size(); j++) {
                 data = tradeCars.get(0).getLimitedEditionSpecsArray().getDimensionsWeight().get(j);
-                mColumnHeaderList.add(data);
+                if (!data.getName().toLowerCase().equals("WEIGHT DISTRIBUTION".toLowerCase()))
+                    mColumnHeaderList.add(data);
 
             }
         }
@@ -132,7 +133,7 @@ public class CompareResultFragment extends BaseFragment {
                 mColumnHeaderList.add(data);
             }
         }
-        if (tradeCars.get(0).getLimitedEditionSpecsArray().getBrakes() != null) {
+        /*if (tradeCars.get(0).getLimitedEditionSpecsArray().getBrakes() != null) {
             for (int j = 0; j < tradeCars.get(0).getLimitedEditionSpecsArray().getBrakes().size(); j++) {
                 data = tradeCars.get(0).getLimitedEditionSpecsArray().getBrakes().get(j);
                 mColumnHeaderList.add(data);
@@ -144,7 +145,7 @@ public class CompareResultFragment extends BaseFragment {
                 data = tradeCars.get(0).getLimitedEditionSpecsArray().getSuspension().get(j);
                 mColumnHeaderList.add(data);
             }
-        }
+        }*/
         if (tradeCars.get(0).getLimitedEditionSpecsArray().getWheelsTyres() != null) {
             for (int j = 0; j < tradeCars.get(0).getLimitedEditionSpecsArray().getWheelsTyres().size(); j++) {
                 data = tradeCars.get(0).getLimitedEditionSpecsArray().getWheelsTyres().get(j);
@@ -179,8 +180,14 @@ public class CompareResultFragment extends BaseFragment {
         for (int i = 0; i < tradeCars.size(); i++) {
             ArrayList<LimitedEditionSpec> limitedEditionSpecs = new ArrayList<>();
 
-            if (tradeCars.get(0).getLimitedEditionSpecsArray().getDimensionsWeight() != null) {
-                limitedEditionSpecs.addAll(tradeCars.get(i).getLimitedEditionSpecsArray().getDimensionsWeight());
+            if (tradeCars.get(i).getLimitedEditionSpecsArray().getDimensionsWeight() != null) {
+                for (int j = 0; j < tradeCars.get(i).getLimitedEditionSpecsArray().getDimensionsWeight().size(); j++) {
+                    data = tradeCars.get(i).getLimitedEditionSpecsArray().getDimensionsWeight().get(j);
+                    if (!data.getName().toLowerCase().equals("WEIGHT DISTRIBUTION".toLowerCase()))
+                        limitedEditionSpecs.add(data);
+                }
+
+                //limitedEditionSpecs.addAll(tradeCars.get(i).getLimitedEditionSpecsArray().getDimensionsWeight());
             }
             if (tradeCars.get(0).getLimitedEditionSpecsArray().getSeatingCapacity() != null) {
                 limitedEditionSpecs.addAll(tradeCars.get(i).getLimitedEditionSpecsArray().getSeatingCapacity());
@@ -197,12 +204,12 @@ public class CompareResultFragment extends BaseFragment {
             if (tradeCars.get(0).getLimitedEditionSpecsArray().getTransmission() != null) {
                 limitedEditionSpecs.addAll(tradeCars.get(i).getLimitedEditionSpecsArray().getTransmission());
             }
-            if (tradeCars.get(0).getLimitedEditionSpecsArray().getBrakes() != null) {
+            /*if (tradeCars.get(0).getLimitedEditionSpecsArray().getBrakes() != null) {
                 limitedEditionSpecs.addAll(tradeCars.get(i).getLimitedEditionSpecsArray().getBrakes());
             }
             if (tradeCars.get(0).getLimitedEditionSpecsArray().getSuspension() != null) {
                 limitedEditionSpecs.addAll(tradeCars.get(i).getLimitedEditionSpecsArray().getSuspension());
-            }
+            }*/
             if (tradeCars.get(0).getLimitedEditionSpecsArray().getWheelsTyres() != null) {
                 limitedEditionSpecs.addAll(tradeCars.get(i).getLimitedEditionSpecsArray().getWheelsTyres());
             }

@@ -24,12 +24,12 @@ public class LuxuryNewCarsSpecs {
     @SerializedName("Transmission ")
     @Expose
     private List<LimitedEditionSpec> transmission = null;
-    @SerializedName("Brakes")
+    /*@SerializedName("Brakes")
     @Expose
     private List<LimitedEditionSpec> brakes = null;
     @SerializedName("Suspension")
     @Expose
-    private List<LimitedEditionSpec> suspension = null;
+    private List<LimitedEditionSpec> suspension = null;*/
     @SerializedName("Wheels_Tyres")
     @Expose
     private List<LimitedEditionSpec> wheelsTyres = null;
@@ -91,7 +91,7 @@ public class LuxuryNewCarsSpecs {
         this.transmission = transmission;
     }
 
-    public List<LimitedEditionSpec> getBrakes() {
+    /*public List<LimitedEditionSpec> getBrakes() {
         return brakes;
     }
 
@@ -105,7 +105,7 @@ public class LuxuryNewCarsSpecs {
 
     public void setSuspension(List<LimitedEditionSpec> suspension) {
         this.suspension = suspension;
-    }
+    }*/
 
     public List<LimitedEditionSpec> getWheelsTyres() {
         return wheelsTyres;
@@ -179,9 +179,9 @@ public class LuxuryNewCarsSpecs {
         @SerializedName("height")
         @Expose
         private String height;
-        @SerializedName("weight_dist")
+        /*@SerializedName("weight_dist")
         @Expose
-        private String weightDist;
+        private String weightDist;*/
         @SerializedName("trunk")
         @Expose
         private String trunk;
@@ -213,13 +213,13 @@ public class LuxuryNewCarsSpecs {
             this.height = height;
         }
 
-        public String getWeightDist() {
+        /*public String getWeightDist() {
             return weightDist;
         }
 
         public void setWeightDist(String weightDist) {
             this.weightDist = weightDist;
-        }
+        }*/
 
         public String getTrunk() {
             return trunk;

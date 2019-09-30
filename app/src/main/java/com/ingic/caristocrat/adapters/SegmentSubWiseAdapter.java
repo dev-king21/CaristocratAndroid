@@ -74,13 +74,14 @@ public class SegmentSubWiseAdapter extends BaseExpandableListAdapter {
         ivSegmentImage.setVisibility(View.INVISIBLE);
         /*ImageView ivSegmentImage = convertView.findViewById(R.id.ivSegmentImage);
         UIHelper.setImageWithGlide(mainActivityContext, ivSegmentImage, arrayList.get(groupPosition).getUn_selected_icon());
+        */
 
-        ImageView ivHeaderExpandedArrow = convertView.findViewById(R.id.view);
+        ImageView ivHeaderExpandedArrow = convertView.findViewById(R.id.expandIcon);
         if (arrayList.get(groupPosition).isActive()) {
-            ivHeaderExpandedArrow.setImageDrawable(mainActivityContext.getResources().getDrawable(R.drawable.uparrow));
+            ivHeaderExpandedArrow.setImageDrawable(mainActivityContext.getResources().getDrawable(R.drawable.minus));
         } else {
-            ivHeaderExpandedArrow.setImageDrawable(mainActivityContext.getResources().getDrawable(R.drawable.downarrow));
-        }*/
+            ivHeaderExpandedArrow.setImageDrawable(mainActivityContext.getResources().getDrawable(R.drawable.addcar));
+        }
 
 //        lastPosition = AnimationNew.showListItem(activityContext, convertView.findViewById(R.id.rlHomeGroup), groupPosition, lastPosition, R.anim.down_from_top);
 

@@ -73,6 +73,8 @@ public class MainDetailPageFragment extends BaseFragment implements View.OnClick
     ArrayList<News> similarListing = new ArrayList<>();
     ArrayList<TradeCar> tradeCars = new ArrayList<>();
     SimilarListingsAdapter similarListingsAdapter;
+    private float singlePrice = 0.f;
+    private float allPrice = 0.f;
     private double itemWidth;
     public static boolean paid = false, login = false;
 
@@ -206,10 +208,7 @@ public class MainDetailPageFragment extends BaseFragment implements View.OnClick
 
         if (login && preferenceHelper.getLoginStatus()) {//
             user = preferenceHelper.getUser();
-            if (mainActivityContext.oneReport)
-                TelrUtils.IntentTelr("300", getActivity(), user);
-            else
-                TelrUtils.IntentTelr("2000", getActivity(), user);
+            resumeReportPayment();
             login = false;
         }
 
@@ -409,19 +408,23 @@ public class MainDetailPageFragment extends BaseFragment implements View.OnClick
 
                 if (binding.btnSubscribe.getText().toString().equalsIgnoreCase("Subscribe to View")) {
                     SubscribeViewDialog subscribeViewDialog = SubscribeViewDialog.newInstance(mainActivityContext);
+                    subscribeViewDialog.singlePrice = singlePrice;
+                    subscribeViewDialog.allPrice = allPrice;
                     subscribeViewDialog.show(mainActivityContext.getFragmentManager(), null);
+                    /*subscribeViewDialog.setPrice();*/
                     subscribeViewDialog.setSubscribeListener((boolean single) -> {
                         mainActivityContext.newsId = "" + news.getId();
                         if (single) {
                             mainActivityContext.oneReport = true;
                             if (preferenceHelper.getLoginStatus())
-                                TelrUtils.IntentTelr("300", getActivity(), user);//payment for report subscription
+                                TelrUtils.IntentTelr(String.format("%.2f", singlePrice), getActivity(), user);//payment for report subscription
                             else
                                 launchSignin(mainActivityContext);
                         } else {
                             mainActivityContext.oneReport = false;
+                            //mainActivityContext.twiceAllReport = true;
                             if (preferenceHelper.getLoginStatus())
-                                TelrUtils.IntentTelr("2000", getActivity(), user);//payment for report subscription
+                                TelrUtils.IntentTelr(String.format("%.2f", allPrice), getActivity(), user);//payment for report subscription
                             else
                                 launchSignin(mainActivityContext);
                         }
@@ -449,9 +452,45 @@ public class MainDetailPageFragment extends BaseFragment implements View.OnClick
                         if (apiResponse.isSuccess()) {
                             binding.btnSubscribe.setVisibility(View.VISIBLE);
                             if (apiResponse.getData().toString().contains("user_id"))
+                            {
                                 binding.btnSubscribe.setText("View Report");
+                            }
                             else
                                 binding.btnSubscribe.setText("Subscribe to View");
+                        }
+                    }
+
+                    @Override
+                    public void onError() {
+                    }
+                }, null);
+    }
+
+    private void resumeReportPayment() {
+        Map<String, Object> params = new HashMap<>();
+        params.put("user_id", user.getId());
+        params.put("report_id", news.getId());
+        WebApiRequest.Instance(registrationActivityContext).request(
+                AppConstants.WebServicesKeys.CHECK_REPORT_PAYMENT, null,
+                null,
+                params,
+                new WebApiRequest.WebServiceObjectResponse() {
+                    @Override
+                    public void onSuccess(ApiResponse apiResponse) {
+                        if (apiResponse.isSuccess()) {
+                            binding.btnSubscribe.setVisibility(View.VISIBLE);
+                            if (apiResponse.getData().toString().contains("user_id"))
+                            {
+                                binding.btnSubscribe.setText("View Report");
+                            }
+                            else
+                            {
+                                binding.btnSubscribe.setText("Subscribe to View");
+                                if (mainActivityContext.oneReport)
+                                    TelrUtils.IntentTelr(String.format("%.2f", singlePrice), getActivity(), user);
+                                else
+                                    TelrUtils.IntentTelr(String.format("%.2f", allPrice), getActivity(), user);
+                            }
                         }
                     }
 
@@ -521,6 +560,8 @@ public class MainDetailPageFragment extends BaseFragment implements View.OnClick
         commentsCount = news.getCommentsCount();
         likesCount = news.getLikeCount();
         isLiked = news.isLiked();
+        singlePrice = news.getSubscriptionPrice();
+        allPrice = news.getAllReportSubcriptionAmount();
 
         if (news.getSource() != null) {
             binding.tvNewsArlicleLink.setText((news.getSource() == null) ? "" : news.getSource());

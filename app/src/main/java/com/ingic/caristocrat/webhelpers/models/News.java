@@ -81,6 +81,15 @@ public class News {
     @Expose
     private String deepLink;
 
+    @SerializedName("subscription_amount")
+    @Expose
+    private float subscriptionPrice;
+
+    @SerializedName("allReportSubcriptionAmount")
+    @Expose
+    private float allReportSubcriptionAmount;
+
+
     public int getId() {
         return id;
     }
@@ -263,5 +272,21 @@ public class News {
 
     public void setDeepLink(String deepLink) {
         this.deepLink = deepLink;
+    }
+
+    public float getSubscriptionPrice() {
+        return subscriptionPrice;
+    }
+
+    public void setSubscriptionPrice(float subscriptionPrice) {
+        this.subscriptionPrice = subscriptionPrice;
+    }
+
+    public float getAllReportSubcriptionAmount() {
+        return allReportSubcriptionAmount;
+    }
+
+    public void setAllReportSubcriptionAmount(float allReportSubcriptionAmount) {
+        this.allReportSubcriptionAmount = allReportSubcriptionAmount;
     }
 }

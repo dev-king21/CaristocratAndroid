@@ -238,6 +238,7 @@ public class CompareCarSearchPanelAdapter extends RecyclerView.Adapter<CompareCa
     private void openModelPicker(int brandId, int position) {
         Map<String, Object> params = new HashMap<>();
         params.put("brand_id", brandId);
+        params.put("category_id", AppConstants.WebServicesKeys.LUXURY_MARKET_CATEGORIES);
         if (mainActivityContext.showLoader()) {
             WebApiRequest.Instance(mainActivityContext).request(AppConstants.WebServicesKeys.MODEL, null, null, params, null, new WebApiRequest.WebServiceArrayResponse() {
                 @Override

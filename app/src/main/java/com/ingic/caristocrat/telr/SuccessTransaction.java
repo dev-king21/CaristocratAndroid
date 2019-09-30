@@ -3,6 +3,7 @@ package com.ingic.caristocrat.telr;
 import android.content.Intent;
 import android.view.View;
 
+import com.ingic.caristocrat.R;
 import com.ingic.caristocrat.activities.BaseActivity;
 import com.ingic.caristocrat.constants.AppConstants;
 import com.ingic.caristocrat.fragments.CompareSegmentMainWiseFragment;
@@ -63,7 +64,7 @@ public class SuccessTransaction extends BaseActivity {
             } else {
                 if (oneReport)
                     oneReportPayment(status.getAuth().getTranref());
-                else
+                else /*if (!twiceAllReport)*/
                     allReportPayment(status.getAuth().getTranref());
             }
         }
@@ -87,6 +88,7 @@ public class SuccessTransaction extends BaseActivity {
 
                             if (apiResponse.getData().toString().contains("user_id")) {
                                 MainDetailPageFragment.paid = true;
+                                transactionDialog.binding.message.setText(getString(R.string.subscribe_single_report));
                                 transactionDialog.setVisibility(View.VISIBLE);
                             } else
                                 transactionDialog.setVisibility(View.GONE);
@@ -115,6 +117,7 @@ public class SuccessTransaction extends BaseActivity {
                         if (apiResponse.isSuccess()) {
                             if (apiResponse.getData().toString().contains("user_id")) {
                                 MainDetailPageFragment.paid = true;
+                                transactionDialog.binding.message.setText(getString(R.string.subscribe_all_reports));
                                 transactionDialog.setVisibility(View.VISIBLE);
                             } else
                                 transactionDialog.setVisibility(View.GONE);
@@ -144,6 +147,7 @@ public class SuccessTransaction extends BaseActivity {
                             if (apiResponse.getData().toString().contains("user_id")) {
                                 CompareSegmentMainWiseFragment.payment = true;
                                 CompareSegmentSubWiseFragment.payment = true;
+                                transactionDialog.binding.message.setText(getString(R.string.subscribe_comparision));
                                 transactionDialog.setVisibility(View.VISIBLE);
                             } else
                                 transactionDialog.setVisibility(View.GONE);

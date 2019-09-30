@@ -345,11 +345,11 @@ public class LuxuryMarketDetailsFragment extends BaseFragment implements View.On
         sectionedExpandableLayoutHelperTransmission = new SectionedExpandableLayoutHelper(mainActivityContext, binding.rvTransmission, this, 2);
         sectionedExpandableLayoutHelperTransmission.addSection(mainActivityContext.getResources().getString(R.string.transmission), new ArrayList<MyCarAttributes>());
 
-        sectionedExpandableLayoutHelperBrakes = new SectionedExpandableLayoutHelper(mainActivityContext, binding.rvBrakes, this, 2);
+        /*sectionedExpandableLayoutHelperBrakes = new SectionedExpandableLayoutHelper(mainActivityContext, binding.rvBrakes, this, 2);
         sectionedExpandableLayoutHelperBrakes.addSection(mainActivityContext.getResources().getString(R.string.brakes), new ArrayList<MyCarAttributes>());
 
         sectionedExpandableLayoutHelperSuspension = new SectionedExpandableLayoutHelper(mainActivityContext, binding.rvSuspension, this, 2);
-        sectionedExpandableLayoutHelperSuspension.addSection(mainActivityContext.getResources().getString(R.string.suspension), new ArrayList<MyCarAttributes>());
+        sectionedExpandableLayoutHelperSuspension.addSection(mainActivityContext.getResources().getString(R.string.suspension), new ArrayList<MyCarAttributes>());*/
 
         sectionedExpandableLayoutHelperWheelsTyres = new SectionedExpandableLayoutHelper(mainActivityContext, binding.rvWheelTyres, this, 2);
         sectionedExpandableLayoutHelperWheelsTyres.addSection(mainActivityContext.getResources().getString(R.string.wheels_tyres), new ArrayList<MyCarAttributes>());
@@ -820,7 +820,7 @@ public class LuxuryMarketDetailsFragment extends BaseFragment implements View.On
                         sectionedExpandableLayoutHelperTransmission.notifyDataSetChanged();
                     }
 
-                    if (result.getLimitedEditionSpecsArray().getBrakes() != null && result.getLimitedEditionSpecsArray().getBrakes().size() > 0) {
+                    /*if (result.getLimitedEditionSpecsArray().getBrakes() != null && result.getLimitedEditionSpecsArray().getBrakes().size() > 0) {
                         ArrayList<MyCarAttributes> convertedAttributes = new ArrayList<>();
                         for (int pos = 0; pos < result.getLimitedEditionSpecsArray().getBrakes().size(); pos++) {
                             MyCarAttributes myCarAttributes = new MyCarAttributes();
@@ -856,7 +856,7 @@ public class LuxuryMarketDetailsFragment extends BaseFragment implements View.On
 //                        sectionedExpandableLayoutHelperSuspension.addSection(mainActivityContext.getResources().getString(R.string.suspension), new ArrayList<MyCarAttributes>());
 //                        sectionedExpandableLayoutHelperSuspension.addAll(mainActivityContext.getResources().getString(R.string.suspension), convertedAttributes);
 //                        sectionedExpandableLayoutHelperSuspension.notifyDataSetChanged();
-                    }
+                    }*/
 
                     if (result.getLimitedEditionSpecsArray().getWheelsTyres() != null && result.getLimitedEditionSpecsArray().getWheelsTyres().size() > 0) {
                         ArrayList<MyCarAttributes> convertedAttributes = new ArrayList<>();

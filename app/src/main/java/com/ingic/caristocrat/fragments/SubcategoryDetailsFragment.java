@@ -37,7 +37,7 @@ import java.util.TimerTask;
 
 /**
  */
-public class SubcategoryDetailsFragment extends BaseFragment implements View.OnClickListener, ViewPager.OnPageChangeListener {
+public class  SubcategoryDetailsFragment extends BaseFragment implements View.OnClickListener, ViewPager.OnPageChangeListener {
     FragmentSubcategoriesDetailsBinding binding;
     LinearLayoutManager linearLayoutManager;
     SubcategoriesFeatureAdapter featureAdapter;
@@ -207,7 +207,6 @@ public class SubcategoryDetailsFragment extends BaseFragment implements View.OnC
                     similarListing.remove(nonFeaturedNews.get(position));
                     mainDetailPageFragment.setSimilarListing(similarListing);
                     mainActivityContext.replaceFragment(mainDetailPageFragment, MainDetailPageFragment.class.getSimpleName(), true, false);
-
                 }
             }
 

@@ -20,6 +20,8 @@ public class SubscribeViewDialog extends DialogFragment implements View.OnClickL
     MainActivity context;
     LayoutSubscribeReportBinding binding;
     String message = "";
+    public float singlePrice;
+    public float allPrice;
 
     SubscribeListener subscribeListener;
 
@@ -57,13 +59,18 @@ public class SubscribeViewDialog extends DialogFragment implements View.OnClickL
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         setListeners();
+        setPrice();
+    }
+
+    public void setPrice() {
+        binding.singleReport.setText(String.format(context.getString(R.string.single_subscription), singlePrice));
+        binding.allReport.setText(String.format(context.getString(R.string.all_subscription), allPrice));
     }
 
     private void setListeners() {
         binding.btnSubscribe.setOnClickListener(this);
         binding.singleReport.setOnClickListener(this);
         binding.allReport.setOnClickListener(this);
-
     }
 
     @Override

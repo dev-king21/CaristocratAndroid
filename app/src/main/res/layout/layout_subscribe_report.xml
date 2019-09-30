@@ -49,7 +49,7 @@
                 android:paddingLeft="@dimen/dp8"
                 android:paddingRight="@dimen/dp8"
                 android:textStyle="bold"
-                android:text="Single Report AED 300"
+                android:text="@string/single_subscription"
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/text_body_1" />
             <TextView
@@ -76,7 +76,7 @@
                 android:paddingLeft="@dimen/dp8"
                 android:paddingRight="@dimen/dp8"
                 android:textStyle="bold"
-                android:text="All reports AED 2,000"
+                android:text="@string/all_subscription"
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/text_body_1" />
 

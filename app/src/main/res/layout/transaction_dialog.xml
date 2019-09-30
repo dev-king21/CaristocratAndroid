@@ -41,7 +41,7 @@
                 android:paddingTop="@dimen/dp20"
                 android:paddingBottom="@dimen/dp20"
                 android:textColor="@color/colorBlack"
-                android:text="You have successfully registered to this training course."
+                android:text="@string/subscribe_training_course"
                 android:textSize="@dimen/text_body_1" />
 
         </LinearLayout>

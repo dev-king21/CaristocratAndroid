@@ -4,8 +4,8 @@ import android.Manifest;
 
 public class AppConstants {
     public static final int SPLASH_DURATION = 5000;
-    //public static final String BASE_URL = "http://caristocrat.me/admin/api/v1/";
-    public static final String BASE_URL = "http://globalconsultingpk.com/caristocrat/admin.caristocrat.me/api/v1/";
+    public static final String BASE_URL = "https://caristocrat.me/admin/api/v1/";
+    //public static final String BASE_URL = "http://globalconsultingpk.com/caristocrat/admin.caristocrat.me/api/v1/";
     public static final String VIDEO_URL = "";
     public static final String WEB_URL = "https://www.caristocrat.me/";
     public static final int SELECT_IMAGE_COUNT = 1;

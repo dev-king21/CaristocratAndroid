@@ -104,7 +104,7 @@
     <string name="create_account_sub_heading">We just need a litte bit of information to get you signed up.</string>
     <string name="full_name">Full Name</string>
     <string name="version">Version</string>
-    <string name="version_optional">Version (Optional)</string>
+    <string name="version_optional">Car Title </string>
     <string name="email_address">Email Address</string>
     <string name="nationality">Nationality</string>
     <string name="enter_nationality">Enter Nationality</string>
@@ -215,7 +215,8 @@
     <string name="colon_make">Make :</string>
     <string name="colon_model">Model :</string>
     <string name="colon_year">Year :</string>
-    <string name="colon_version">Version :</string>
+    <string name="colon_price">Price :</string>
+    <string name="colon_version">Car Title :</string>
     <string name="colon_km">KM :</string>
     <string name="colon_chassis">Chassis :</string>
     <string name="colon_regional_specs">Regional Specs :</string>
@@ -422,6 +423,7 @@
     <string name="err_accident">Please select accident</string>
     <string name="err_exterior_color">Please select exterior color</string>
     <string name="err_interior_color">Please select interior color</string>
+    <string name="err_price">Please enter valid price</string>
     <string name="make_first_error">Please select make first</string>
     <string name="cannot_share_name">Cannot share details without name.</string>
     <string name="cannot_share_image">Cannot share details without Image.</string>
@@ -646,5 +648,20 @@
     <string name="write_to_us">Write to us with your query and we will get back to you.</string>
     <string name="all_models">All Models</string>
     <string name="all_versions">All Versions</string>
+
+    <string name="option_dealer">Get an offer from dealers</string>
+    <string name="option_online">List your car online</string>
+
+    <string name="from_date">Subscribed on: </string>
+    <string name="to_date">Valid till: </string>
+
+    <string name="purchase">subscribe now</string>
+    <string name="subscribe_training_course">You have successfully registered to this training course.</string>
+    <string name="subscribe_comparision">You have successfully registered to professional comparison.</string>
+    <string name="subscribe_all_reports">You have successfully registered to all reports.</string>
+    <string name="subscribe_single_report">You have successfully registered to single report.</string>
+    <string name="single_subscription">Single Report AED %.2f</string>
+    <string name="all_subscription">All reports AED %.2f</string>
+
 
 </resources>

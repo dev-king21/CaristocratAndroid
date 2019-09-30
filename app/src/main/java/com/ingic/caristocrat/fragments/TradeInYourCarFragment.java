@@ -81,6 +81,7 @@ public class TradeInYourCarFragment extends BaseFragment implements View.OnClick
     User currentUser;
 
     boolean trading, profile, edit, loaded, evaluate;
+    Integer show_online = 0;
     OnCarSelectedForTradeListener onCarSelectedForTradeListener;
     Titlebar titlebar;
     TradeCar tradeCar;
@@ -260,6 +261,22 @@ public class TradeInYourCarFragment extends BaseFragment implements View.OnClick
                     UIHelper.showSnackbar(getView(), mainActivityContext.getResources().getString(R.string.err_interior_color), Toast.LENGTH_SHORT);
                     return;
                 }
+
+                float price = 0.f;
+                if (UIHelper.isEmptyOrNull(binding.etPrice.getText().toString())) {
+                    UIHelper.showSnackbar(getView(), mainActivityContext.getResources().getString(R.string.err_price), Toast.LENGTH_SHORT);
+                    return;
+                }
+                try {
+                    price = Float.parseFloat(binding.etPrice.getText().toString());
+                } catch (Exception e) {
+                    price = 0.f;
+                }
+                if (price == 0.f) {
+                    UIHelper.showSnackbar(getView(), mainActivityContext.getResources().getString(R.string.err_price), Toast.LENGTH_SHORT);
+                    return;
+                }
+
                 // if (binding.etChassis.getText().length() > 0) {
                 if (!CustomValidation.validateLength(binding.etChassis, binding.ilChassis, mainActivityContext.getResources().getString(R.string.err_chassis), "1", "20"))
                     return;
@@ -1276,6 +1293,8 @@ public class TradeInYourCarFragment extends BaseFragment implements View.OnClick
         params.put("car_attributes", jsonArray.toString());
         params.put("media[]", mediaFiles);
         params.put("notes", UIHelper.isEmptyOrNull(binding.etTradeNotes.getText().toString()) ? "" : binding.etTradeNotes.getText().toString());
+        params.put("price", binding.etPrice.getText().toString());
+        params.put("show_online", show_online.toString());
 
         if (binding.etVersion.getText().toString().trim().length() > 0) {
             params.put("version_app", binding.etVersion.getText().toString());

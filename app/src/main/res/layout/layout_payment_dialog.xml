@@ -29,12 +29,25 @@
             android:text="This feature is available only in the paid membership subscription. Subscribe to the Professional Comparison and get the full access to compare cars in each segment and sub-segment."
             android:textSize="@dimen/text_body_2" />
 
+        <TextView
+            android:id="@+id/compareSubPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp8"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Price: AED %s"
+            android:textSize="@dimen/text_body_2" />
+
         <Button
             android:id="@+id/btnPay"
             style="@style/CustomButton"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp50"
-            android:text="pay"
+            android:text="@string/purchase"
             android:textSize="@dimen/sp13" />
 
 

@@ -95,6 +95,7 @@ public class CompareSegmentSubWiseFragment extends BaseFragment {
                 compareCar(String.valueOf(arrayList.get(groupPosition).getChildTypes().get(childPosition).getId()), true, arrayList.get(groupPosition).getChildTypes().get(childPosition).getName());
             else {
                 PaymentDialog paymentDialog = PaymentDialog.newInstance(mainActivityContext);
+                paymentDialog.subscriptionPrice = comparisionFee;
                 paymentDialog.show(mainActivityContext.getFragmentManager(), null);
                 paymentDialog.setPaymentListener(() -> {
 
@@ -330,12 +331,12 @@ public class CompareSegmentSubWiseFragment extends BaseFragment {
             payment = false;
         }
 
-        if (preferenceHelper.getLoginStatus())
+        //if (preferenceHelper.getLoginStatus())
             checkProComparisonSub();
     }
 
     private void checkProComparisonSub() {
-        String url = AppConstants.BASE_URL + AppConstants.WebServices.CHECK_PRO_COMPARISON_SUB + preferenceHelper.getUser().getId();
+        String url = AppConstants.BASE_URL + AppConstants.WebServices.CHECK_PRO_COMPARISON_SUB + ((preferenceHelper.getLoginStatus())? preferenceHelper.getUser().getId() : "334");
         JSONClient client = new JSONClient(getActivity(), new GetJSONListener() {
             @Override
             public void onRemoteCallComplete(String jsonFromNet) {
@@ -351,7 +352,8 @@ public class CompareSegmentSubWiseFragment extends BaseFragment {
                     }
                     JSONObject fee = jObject.optJSONObject("proComparisonFee");
                     comparisionFee = fee.optString("amount", "");
-                    if(MainDetailPageFragment.login)
+                    if (comparisionFee.isEmpty()) comparisionFee = "500";
+                    if(!isSubscribed && MainDetailPageFragment.login)
                     {
                         TelrUtils.IntentTelr(comparisionFee, getActivity(), preferenceHelper.getUser());
                         payment = true;

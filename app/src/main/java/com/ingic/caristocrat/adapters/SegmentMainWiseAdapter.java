@@ -59,7 +59,7 @@ public class SegmentMainWiseAdapter extends BaseAdapter {
         ImageView ivSegmentImage = convertView.findViewById(R.id.ivSegmentImage);
         UIHelper.setImageWithGlide(mainActivityContext, ivSegmentImage, arrayList.get(groupPosition).getUn_selected_icon());
 
-        ImageView ivHeaderExpandedArrow = convertView.findViewById(R.id.view);
+        ImageView ivHeaderExpandedArrow = convertView.findViewById(R.id.expandIcon);
         if (arrayList.get(groupPosition).isActive()) {
             ivHeaderExpandedArrow.setImageDrawable(mainActivityContext.getResources().getDrawable(R.drawable.uparrow));
         } else {

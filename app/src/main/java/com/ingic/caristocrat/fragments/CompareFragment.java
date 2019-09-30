@@ -1,5 +1,6 @@
 package com.ingic.caristocrat.fragments;
 
+import android.annotation.SuppressLint;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -24,6 +25,8 @@ import java.util.List;
 public class CompareFragment extends BaseFragment implements View.OnClickListener {
     private FragmentCompareBinding binding;
     LuxuryMarketSearchFilter filter;
+
+    private int tab_id = 0;
 
     public CompareFragment() {
     }
@@ -70,24 +73,11 @@ public class CompareFragment extends BaseFragment implements View.OnClickListene
         adapter.add(mainActivityContext.getResources().getString(R.string.professional_comparison), new CompareSegmentMainWiseFragment(filter));
         binding.viewpager.setAdapter(adapter);
         binding.tabLayout.setupWithViewPager(binding.viewpager);
-        mainActivityContext.getBinding().btnFilterAction.setVisibility(View.VISIBLE);
-        mainActivityContext.getBinding().btnFilterAction.setText(mainActivityContext.getResources().getString(R.string.compare_cars));
-        mainActivityContext.getBinding().llCommentsLayout.setVisibility(View.VISIBLE);
         binding.tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                switch (tab.getPosition()) {
-                    case 0:
-                        mainActivityContext.getBinding().btnFilterAction.setVisibility(View.VISIBLE);
-                        mainActivityContext.getBinding().btnFilterAction.setText(mainActivityContext.getResources().getString(R.string.compare_cars));
-                        mainActivityContext.getBinding().llCommentsLayout.setVisibility(View.VISIBLE);
-                        break;
-                    case 1:
-                        mainActivityContext.getBinding().btnFilterAction.setVisibility(View.GONE);
-                        mainActivityContext.getBinding().btnFilterAction.setText(mainActivityContext.getResources().getString(R.string.apply));
-                        mainActivityContext.getBinding().llCommentsLayout.setVisibility(View.GONE);
-                        break;
-                }
+                setTab_id(tab.getPosition());
+                tabSelected();
             }
 
             @Override
@@ -100,6 +90,31 @@ public class CompareFragment extends BaseFragment implements View.OnClickListene
 
             }
         });
+        binding.tabLayout.getTabAt(getTab_id()).select();
+    }
+
+    public void tabSelected() {
+        switch (tab_id) {
+            case 0:
+                mainActivityContext.getBinding().btnFilterAction.setVisibility(View.VISIBLE);
+                mainActivityContext.getBinding().btnFilterAction.setText(mainActivityContext.getResources().getString(R.string.compare_cars));
+                mainActivityContext.getBinding().llCommentsLayout.setVisibility(View.VISIBLE);
+                break;
+            case 1:
+                mainActivityContext.getBinding().btnFilterAction.setVisibility(View.GONE);
+                mainActivityContext.getBinding().btnFilterAction.setText(mainActivityContext.getResources().getString(R.string.apply));
+                mainActivityContext.getBinding().llCommentsLayout.setVisibility(View.GONE);
+                break;
+        }
+
+    }
+
+    public int getTab_id() {
+        return tab_id;
+    }
+
+    public void setTab_id(int tab_id) {
+        this.tab_id = tab_id;
     }
 
     private class ComparePagerAdapter extends FragmentStatePagerAdapter {

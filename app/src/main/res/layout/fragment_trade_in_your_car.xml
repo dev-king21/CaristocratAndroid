@@ -94,6 +94,36 @@
                 android:paddingStart="@dimen/dp24"
                 android:paddingEnd="@dimen/dp24">
 
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/optionDealer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/option_dealer"
+                            android:checked="true"
+                            android:textSize="@dimen/sp14" />
+
+                        <RadioButton
+                            android:id="@+id/optionOnline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/option_online"
+                            android:textSize="@dimen/sp14" />
+
+                    </RadioGroup>
+
+                </LinearLayout>-->
+
                 <TextView
                     android:id="@+id/tvFormDescription"
                     android:layout_width="wrap_content"
@@ -271,6 +301,48 @@
                     android:layout_marginTop="@dimen/dp4"
                     android:background="@color/colorTransparentGray" />
 
+                <com.ingic.caristocrat.helpers.CustomTextInputLayout
+                    android:id="@+id/ilPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:drawableStart="@drawable/service_contract"
+                            android:drawablePadding="@dimen/dp16"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center_vertical"
+                            android:text="@string/colon_price"
+                            android:textSize="@dimen/sp14" />
+
+                        <EditText
+                            android:id="@+id/etPrice"
+                            style="@style/RegistrationInputLayoutOptions"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:hint=""
+                            android:imeOptions="actionDone"
+                            android:maxLength="32"
+                            android:padding="@dimen/dp16"
+                            android:singleLine="true"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp0.5"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:background="@color/colorTransparentGray" />
+
+                </com.ingic.caristocrat.helpers.CustomTextInputLayout>
                 <com.ingic.caristocrat.helpers.CustomTextInputLayout
                     android:id="@+id/ilVersion"
                     android:layout_width="match_parent"

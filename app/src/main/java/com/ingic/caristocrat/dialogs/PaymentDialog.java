@@ -21,6 +21,8 @@ public class PaymentDialog extends DialogFragment implements View.OnClickListene
     LayoutPaymentDialogBinding binding;
 
     PaymentListener paymentListener;
+    public String subscriptionPrice;
+
 
     public static PaymentDialog newInstance(MainActivity context) {
         PaymentDialog fragment = new PaymentDialog();
@@ -55,6 +57,7 @@ public class PaymentDialog extends DialogFragment implements View.OnClickListene
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        binding.compareSubPrice.setText(String.format("Price: AED %s", subscriptionPrice));
         setListeners();
     }
 

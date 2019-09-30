@@ -97,7 +97,7 @@ public class MySubscription extends BaseFragment {
                         Map.Entry mentry = (Map.Entry) iterator.next();
                         System.out.print("key is: " + mentry.getKey() + " & Value is: ");
                         System.out.println(mentry.getValue());
-                        sectionAdapter.addSection(new MySubscriptionAdapter(mentry.getKey().toString(), (List<Subscription>) mentry.getValue()));
+                        sectionAdapter.addSection(new MySubscriptionAdapter(mentry.getKey().toString(), (List<Subscription>) mentry.getValue(), mainActivityContext));
 
                     }
                     binding.recyclerview.setLayoutManager(new LinearLayoutManager(getContext()));

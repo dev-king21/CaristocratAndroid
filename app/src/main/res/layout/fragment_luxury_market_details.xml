@@ -541,7 +541,7 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
+                    <!--<LinearLayout
                         android:id="@+id/Brakes"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -570,7 +570,7 @@
                             android:layout_height="wrap_content"
                             android:nestedScrollingEnabled="false" />
 
-                    </LinearLayout>
+                    </LinearLayout>-->
 
                     <LinearLayout
                         android:id="@+id/WheelTyres"
